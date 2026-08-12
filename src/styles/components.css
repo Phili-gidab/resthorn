@@ -79,22 +79,45 @@
 .hero.static .hh-line.thin { color: #b9d183; }
 .hero.static .hm-sub { color: rgba(255, 255, 255, 0.88); }
 .hero.static .hm-scroll { display: none; }
-.hero.static .hero-over { position: relative; opacity: 1; bottom: auto; padding-bottom: clamp(72px, 12vh, 104px); }
+.hero.static .hero-over { position: relative; opacity: 1; bottom: auto; padding-bottom: clamp(66px, 11vh, 100px); }
 .hero.static .ho-line { display: none; }
-.hero.static .hero-geez { display: none; }
-.hero.static .hero-photo::after {
-  background: linear-gradient(to top, rgba(15, 17, 10, 0.82) 0%, rgba(15, 17, 10, 0.46) 45%, rgba(15, 17, 10, 0.34) 100%);
-}
+.hero.static .hero-geez { display: block; }
 .hero.static .hero-ticker { transform: none; }
-/* short phones: keep the standfirst from crowding out the buttons */
-@media (max-width: 560px) {
-  .hero.static .hm-sub {
-    font-size: 0.9rem; line-height: 1.55;
-    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden;
+
+/* ---- phones: fewer elements, more air, the film doing the work ----
+   Everything here is a subtraction. A 390px screen cannot hold a kicker,
+   a headline, a paragraph of prose, a Ge'ez line, two buttons and a ticker
+   without all of it looking cramped — so the prose goes (it opens the very
+   next band anyway) and the headline gets the room it was always owed. */
+@media (max-width: 879px) {
+  .hero.static .hero-head { padding-top: calc(64px + clamp(12px, 4vh, 32px)); }
+  .hero.static .hh-kicker {
+    font-size: 0.64rem; letter-spacing: 0.2em; line-height: 1.5;
+    margin-bottom: clamp(14px, 2.4vh, 22px);
   }
-  .hero.static .hero-cta .btn { padding: 12px 20px; font-size: 0.74rem; }
+  .hero.static .hh-kicker .kk-sep { display: none; }
+  .hero.static .hh-kicker .geez { display: block; font-size: 0.95rem; letter-spacing: 0.02em; margin-bottom: 3px; }
+  .hero.static .hh-kicker .kk-en { display: block; }
+  .hero.static h1 { font-size: clamp(2.5rem, 11.2vw, 4rem); line-height: 1.02; letter-spacing: -0.025em; }
+  .hero.static h1:lang(ti), .hero.static h1:lang(am) { font-size: clamp(1.75rem, 8vw, 3rem); line-height: 1.28; }
+  .hero.static .hero-meta { display: none; }
+  .hero.static .hero-geez { font-size: 1rem; margin-bottom: 15px; }
+  .hero-credit { display: none; }
+  /* scrim top and bottom for the type, clear through the middle for the film */
+  .hero.static .hero-photo::after {
+    background: linear-gradient(to bottom,
+      rgba(15, 17, 10, 0.68) 0%,
+      rgba(15, 17, 10, 0.22) 32%,
+      rgba(15, 17, 10, 0.10) 48%,
+      rgba(15, 17, 10, 0.70) 82%,
+      rgba(15, 17, 10, 0.90) 100%);
+  }
   .hero-ticker { padding: 11px 0; }
-  .hero-ticker .mq-item { font-size: 0.66rem; }
+  .hero-ticker .mq-item { font-size: 0.64rem; letter-spacing: 0.16em; }
+}
+@media (max-width: 420px) {
+  .hero.static .hero-cta { gap: 9px; }
+  .hero.static .hero-cta .btn { padding: 12px 19px; font-size: 0.72rem; letter-spacing: 0.12em; }
 }
 
 /* ============ marquee ============ */

@@ -4,37 +4,74 @@ import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Marquee, Magnetic } from './motion'
+import { usePrefs } from '../hooks/usePrefs'
 import type { Locale } from '../content'
 
 gsap.registerPlugin(ScrollTrigger)
 
 /* ============================================================
-   Hero — a cinematic opening scene.
-   Load: curtain lifts, the headline sets itself line by line
-   over a framed photograph. Scroll: the frame swallows the
-   viewport — the land takes over — then releases into the page.
-   Falls back to a static full-bleed for reduced motion / mobile.
+   Hero — a cinematic opening scene, in three cuts.
+
+   cinema (desktop): curtain lifts, the headline sets itself line
+     by line over a framed photograph, then the frame swallows the
+     viewport on scroll — the land takes over — and releases.
+
+   mobile: the film runs full-bleed from the first frame. Same
+     curtain, same line-by-line setting, a slow drift across the
+     footage, and a scrolled departure rather than a pinned scene —
+     pinning fights the address bar on phones and loses.
+
+   still: reduced motion or a metered connection. Poster frame,
+     no choreography, everything legible immediately.
    ============================================================ */
+
+type Mode = 'cinema' | 'mobile' | 'still'
 
 export default function Hero({ lng, base }: { lng: Locale; base: string }) {
   const { t } = useTranslation()
   const root = useRef<HTMLElement>(null)
-  const [cinema] = useState(() =>
-    typeof window !== 'undefined' &&
-    !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-    window.innerWidth >= 880,
-  )
+  const prefs = usePrefs()
+  const [mode] = useState<Mode>(() => {
+    if (typeof window === 'undefined') return 'still'
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 'still'
+    return window.innerWidth >= 880 ? 'cinema' : 'mobile'
+  })
+  /* the footage is the atmosphere — but not at the cost of someone's data plan */
+  const film = mode !== 'still' && !prefs.saveData
 
   useEffect(() => {
     const el = root.current
-    if (!el) return
-    if (!cinema) {
-      el.querySelectorAll<HTMLElement>('.hero-curtain span').forEach((s) => (s.style.display = 'none'))
-      return
-    }
+    if (!el || mode === 'still') return
+
     const ctx = gsap.context(() => {
-      /* The photo window opens BELOW the real headline, measured — never under it.
-         Recomputed on refresh so every viewport gets a correct frame. */
+      if (mode === 'mobile') {
+        /* ---------- phones: full-bleed film, scrolled departure ---------- */
+        const intro = gsap.timeline({ defaults: { ease: 'expo.inOut' } })
+        intro
+          .to('.hc-2', { yPercent: -100, duration: 0.78, delay: 0.05 })
+          .to('.hc-1', { yPercent: -100, duration: 0.84 }, '-=0.6')
+          .from('.hh-kicker', { y: 18, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.48')
+          .from('.hh-line', { yPercent: 118, duration: 0.88, ease: 'power4.out', stagger: 0.1 }, '-=0.46')
+          .from('.hero-meta', { y: 16, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.58')
+          .from('.hero-geez', { y: 14, opacity: 0, duration: 0.55, ease: 'power3.out' }, '-=0.42')
+          .from('.hero-cta', { y: 16, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
+          .from('.hero-ticker', { yPercent: 100, duration: 0.7, ease: 'power3.out' }, '-=0.42')
+
+        /* a slow push across the footage so the frame is never quite still */
+        gsap.fromTo('.hero-media', { scale: 1.18 }, { scale: 1.03, duration: 10, ease: 'none' })
+
+        /* departure on scroll — no pin: mobile chrome resizes mid-scroll and
+           a pinned 100svh scene tears itself apart when it does */
+        gsap.timeline({
+          scrollTrigger: { trigger: el, start: 'top top', end: 'bottom top', scrub: 0.5 },
+        })
+          .to('.hero-head', { yPercent: -30, opacity: 0, ease: 'none' }, 0)
+          .to('.hero-over', { yPercent: -16, opacity: 0, ease: 'none' }, 0)
+          .to('.hero-photo .hero-media', { scale: 1.16, ease: 'none' }, 0)
+        return
+      }
+
+      /* ---------- desktop: the framed window that swallows the viewport ---------- */
       const frameClip = () => {
         const head = el.querySelector<HTMLElement>('.hero-head')
         const h = el.offsetHeight || window.innerHeight
@@ -43,7 +80,6 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
       }
       gsap.set('.hero-photo', { clipPath: frameClip() })
 
-      /* --- load choreography --- */
       const intro = gsap.timeline({ defaults: { ease: 'expo.inOut' } })
       intro
         .to('.hc-2', { yPercent: -100, duration: 0.85, delay: 0.1 })
@@ -53,7 +89,6 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
         .fromTo('.hero-photo .hero-media', { scale: 1.28 }, { scale: 1.12, duration: 2.0, ease: 'expo.out' }, '-=1.2')
         .from('.hero-meta', { y: 22, opacity: 0, duration: 0.7, ease: 'power3.out' }, '-=1.4')
 
-      /* --- scroll scene: the frame swallows the viewport --- */
       const scene = gsap.timeline({
         scrollTrigger: {
           trigger: el,
@@ -81,7 +116,7 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
       return () => window.removeEventListener('resize', onResize)
     }, el)
     return () => ctx.revert()
-  }, [cinema])
+  }, [mode])
 
   const tickerItems = [
     'Est. 1978 · Mekelle', '3,000,000 lives', '1,000+ projects', '29 partners',
@@ -89,14 +124,23 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
     'WFP · UNICEF · FAO · EU · Oxfam',
   ]
 
-  return (
-    <section className={`hero ${cinema ? 'cinema' : 'static'}`} data-elev="3900" ref={root}>
-      <div className="hero-curtain" aria-hidden="true"><span className="hc-1" /><span className="hc-2" /></div>
+  const shell = mode === 'cinema' ? 'cinema' : mode === 'mobile' ? 'static mobile' : 'static'
 
-      {/* headline layer (white ground, cinema mode) */}
+  return (
+    <section className={`hero ${shell}`} data-elev="3900" ref={root}>
+      {mode !== 'still' && (
+        <div className="hero-curtain" aria-hidden="true"><span className="hc-1" /><span className="hc-2" /></div>
+      )}
+
+      {/* headline layer */}
       <div className="hero-head">
         <div className="shell">
-          <p className="hh-kicker"><span className="geez" lang="ti">ማሕበር ረድኤት ትግራይ</span> — {t('hero.kicker')}</p>
+          {/* three parts so phones can stack the lockup instead of wrapping it */}
+          <p className="hh-kicker">
+            <span className="geez" lang="ti">ማሕበር ረድኤት ትግራይ</span>
+            <span className="kk-sep"> — </span>
+            <span className="kk-en">{t('hero.kicker')}</span>
+          </p>
           <h1 lang={lng}>
             <span className="hh-mask"><span className="hh-line">{t('hero.title1')}</span></span>
             <span className="hh-mask"><span className="hh-line thin">{t('hero.title2')}</span></span>
@@ -110,7 +154,7 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
 
       {/* the film */}
       <div className="hero-photo">
-        {cinema ? (
+        {film ? (
           <video
             className="hero-media"
             src="/hero-loop.mp4"
@@ -125,7 +169,7 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
         <span className="hero-credit">Clean water · REST field footage · Tigray</span>
       </div>
 
-      {/* overlay content that appears once the land takes over */}
+      {/* overlay content */}
       <div className="hero-over">
         <div className="shell">
           <p className="hero-geez" lang="ti">ካብ ምድሪ · ናብ ህይወት</p>
