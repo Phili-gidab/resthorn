@@ -5,11 +5,20 @@
   background: var(--earth);
   display: flex; flex-direction: column; justify-content: flex-end;
 }
-.hero-film { position: absolute; inset: 0; z-index: 1; }
-.hero-media { width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+.hero-film { position: absolute; inset: 0; z-index: 1; will-change: transform; }
+.hero-film .hero-media {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  will-change: transform;
+  /* a light grade so the footage reads finished, not raw camera */
+  filter: saturate(1.06) contrast(1.03);
+}
+/* the footage waits under the surface until it can actually play */
+.hero-video { opacity: 0; transition: opacity 0.9s ease; }
+.hero-video.on { opacity: 1; }
 
 /* the shade — a whisper of highland green, heavier where the type stands,
-   gone by mid-frame so the footage keeps its daylight */
+   gone by mid-frame so the footage keeps its daylight; a faint vignette
+   holds the corners of the frame */
 .hero-shade {
   position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background:
@@ -20,21 +29,46 @@
       rgba(20, 30, 12, 0) 72%),
     linear-gradient(to bottom,
       rgba(16, 24, 9, 0.28) 0%,
-      rgba(16, 24, 9, 0) 24%);
+      rgba(16, 24, 9, 0) 24%),
+    radial-gradient(130% 100% at 50% 42%,
+      rgba(10, 16, 6, 0) 62%,
+      rgba(10, 16, 6, 0.22) 100%);
 }
 
-/* the statement, lower-left */
-.hero-body { position: relative; z-index: 3; padding-bottom: clamp(84px, 13vh, 150px); }
+/* film grain — the texture that says footage, not stock photo */
+.hero-grain {
+  position: absolute; inset: -75%; z-index: 2; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  animation: grain 7s steps(10) infinite;
+}
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -8%); }
+  20% { transform: translate(-13%, 3%); }
+  30% { transform: translate(6%, -12%); }
+  40% { transform: translate(-4%, 13%); }
+  50% { transform: translate(-12%, 7%); }
+  60% { transform: translate(12%, 2%); }
+  70% { transform: translate(2%, 12%); }
+  80% { transform: translate(-8%, -2%); }
+  90% { transform: translate(9%, -9%); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-grain { animation: none; } }
+
+/* the statement, anchored low; the deck answers from the right */
+.hero-body { position: relative; z-index: 3; padding-bottom: clamp(76px, 11vh, 128px); }
+.hb-grid { display: flex; align-items: flex-end; justify-content: space-between; gap: clamp(24px, 4vw, 64px); }
 .hb-kicker {
   font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
   color: rgba(255, 255, 255, 0.78); font-weight: 500;
-  margin-bottom: clamp(18px, 3vh, 30px);
+  margin-bottom: clamp(14px, 2.2vh, 22px);
 }
 .hb-kicker .geez { color: #d8e8b8; letter-spacing: 0.04em; font-size: 0.92rem; text-transform: none; }
 .hb-lead {
   font-weight: 600; color: #d8e8b8;
   font-size: clamp(1rem, 1.9vw, 1.35rem); letter-spacing: 0.02em;
-  margin-bottom: clamp(10px, 1.6vh, 18px);
+  margin-bottom: clamp(8px, 1.2vh, 14px);
   text-shadow: 0 1px 24px rgba(10, 14, 6, 0.5);
 }
 .hero h1 {
@@ -46,23 +80,45 @@
 .hh-mask { display: block; overflow: hidden; padding-bottom: 0.09em; margin-bottom: -0.09em; }
 .hh-line { display: inline-block; will-change: transform; }
 .hh-line.thin { font-weight: 340; font-style: italic; color: #cfe3a4; }
-.hb-sub {
-  margin-top: clamp(16px, 2.4vh, 24px);
-  color: rgba(255, 255, 255, 0.86); font-size: clamp(0.92rem, 1.25vw, 1.04rem);
-  max-width: 46ch; line-height: 1.65;
-  text-shadow: 0 1px 18px rgba(10, 14, 6, 0.5);
-}
 .hero-cta { margin-top: clamp(22px, 3.4vh, 34px); display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .hero-cta .btn.solid { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); }
-.hero-cta .btn.ghost-light { border-color: rgba(255, 255, 255, 0.45); }
-.hero-cta .btn.ghost-light:hover { border-color: #d8e8b8; color: #d8e8b8; }
-
-/* margins of the frame */
-.hm-scroll {
-  position: absolute; right: clamp(16px, 2.4vw, 34px); bottom: clamp(76px, 12vh, 120px); z-index: 3;
-  writing-mode: vertical-rl; font-size: 0.64rem; letter-spacing: 0.3em; text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+.hero-cta .btn.ghost-light {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(14, 20, 8, 0.3); backdrop-filter: blur(10px);
 }
+.hero-cta .btn.ghost-light:hover { border-color: #d8e8b8; color: #d8e8b8; background: rgba(14, 20, 8, 0.44); }
+
+/* the deck — standfirst as a hanging editorial note, lower-right */
+.hb-deck {
+  flex: 0 1 auto; max-width: 32ch; margin-bottom: 6px;
+  padding-left: 18px; border-left: 2px solid rgba(216, 232, 184, 0.55);
+}
+.hb-sub {
+  color: rgba(255, 255, 255, 0.9); font-size: clamp(0.88rem, 1.1vw, 0.98rem);
+  line-height: 1.66; text-shadow: 0 1px 16px rgba(10, 14, 6, 0.65);
+}
+
+/* the descent begins here — elevation, a dripping cue, the word */
+.hero-cue {
+  position: absolute; right: clamp(18px, 2.6vw, 38px); bottom: clamp(84px, 13vh, 130px); z-index: 3;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.hc-elev { font-size: 0.62rem; letter-spacing: 0.2em; font-variant-numeric: tabular-nums; writing-mode: vertical-rl; }
+.hc-line { position: relative; width: 1px; height: 36px; background: rgba(255, 255, 255, 0.26); overflow: hidden; }
+.hc-dot {
+  position: absolute; left: -1.5px; top: -5px; width: 4px; height: 4px; border-radius: 50%;
+  background: #d8e8b8; animation: hc-drop 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes hc-drop {
+  0% { transform: translateY(0); opacity: 0; }
+  18% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translateY(45px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .hc-dot { animation: none; } }
+.hc-word { font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; writing-mode: vertical-rl; }
+
 .hero-credit {
   position: absolute; right: 18px; bottom: 62px; z-index: 3;
   font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.4);
@@ -75,12 +131,14 @@
   padding: 14px 0; color: rgba(255, 255, 255, 0.85);
 }
 .hero-ticker .mq-item { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
-.hero-ticker .mq-item .geez { text-transform: none; letter-spacing: 0.04em; font-size: 0.85rem; color: #d8e8b8; }
+.hero-ticker .mq-item .geez { text-transform: none; letter-spacing: 0.04em; font-size: 0.85rem; color: #e3efcb; }
 .hero-ticker .mq-dot { color: #8ab54a; }
+.hero-ticker:hover .mq-track { animation-play-state: paused; }
 
-/* phones: the same frame, tighter set */
+/* phones: the same frame, tighter set — the deck rejoins the flow */
 @media (max-width: 879px) {
   .hero-body { padding-bottom: clamp(72px, 11vh, 104px); }
+  .hb-grid { display: block; }
   .hb-kicker { font-size: 0.62rem; letter-spacing: 0.18em; line-height: 1.5; margin-bottom: clamp(14px, 2.4vh, 22px); }
   .hb-kicker .kk-sep { display: none; }
   .hb-kicker .geez { display: block; font-size: 0.9rem; margin-bottom: 3px; }
@@ -88,11 +146,12 @@
   .hb-lead { font-size: 1rem; }
   .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
   .hero h1:lang(ti), .hero h1:lang(am) { font-size: clamp(1.9rem, 8.6vw, 3rem); }
+  .hb-deck { margin: 20px 0 0; max-width: 46ch; }
   .hb-sub {
     font-size: 0.88rem; line-height: 1.55;
     display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
   }
-  .hm-scroll { display: none; }
+  .hero-cue { display: none; }
   .hero-credit { display: none; }
   .hero-cta { gap: 9px; }
   .hero-cta .btn { padding: 12px 19px; font-size: 0.72rem; letter-spacing: 0.12em; }
