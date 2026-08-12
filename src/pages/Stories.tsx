@@ -142,21 +142,34 @@ export function StoryDetail({ lng, base }: { lng: Locale; base: string }) {
 
   const next = content.stories[idx + 1] ? idx + 1 : 0
 
+  /* a dropcap only works on a letter — CMS copy sometimes opens with an emoji */
+  const canDrop = /^[A-Za-zሀ-፿]/.test(paras[0] ?? '')
+
   return (
-    <article className="detail page-head" data-elev="2600">
-      {story.image && (
-        <div className="detail-hero">
-          <img src={cms(story.image)} alt="" />
-        </div>
-      )}
+    <article className="detail story-article page-head" data-elev="2600">
       <div className="shell">
         <div className="detail-head">
           <Link to={`${base}/stories`} className="svc-more">← {t('misc.back')}</Link>
           <div className="si-meta" style={{ marginTop: 18 }}>{story.date} · REST · Tigray</div>
           <Lines as="h1" lang={lng}>{pick(story.title, lng)}</Lines>
         </div>
+        {story.image && (
+          <figure className="fig detail-fig">
+            <img
+              src={cms(story.image)}
+              alt=""
+              loading="lazy"
+              onError={(e) => {
+                /* a broken CMS image should vanish, not leave a torn frame */
+                const f = e.currentTarget.closest('figure')
+                if (f) (f as HTMLElement).style.display = 'none'
+              }}
+            />
+            <figcaption><span>REST field report</span><span className="loc">{story.date}</span></figcaption>
+          </figure>
+        )}
         <div className="prose detail-body" lang={lng}>
-          {paras.map((p, i) => <p key={i} className={i === 0 ? 'dropcap' : undefined}>{p}</p>)}
+          {paras.map((p, i) => <p key={i} className={i === 0 && canDrop ? 'dropcap' : undefined}>{p}</p>)}
         </div>
         <div className="detail-next">
           <span className="nb-kicker" style={{ color: 'var(--ink-dim)' }}>Next story</span>
