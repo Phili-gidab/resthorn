@@ -1,0 +1,186 @@
+{
+ "projects": [
+  {
+   "slug": "tahtay-kalat-well",
+   "title": "Tahtay Kalat Well",
+   "type": "Well with hand pump",
+   "woreda": "Tahtay Kalat",
+   "tabia": "",
+   "year": "Completed",
+   "stat": {
+    "label": "People served",
+    "value": "160"
+   },
+   "funder": "charity: water · Humble Bundle Community",
+   "partner": "REST (implementing partner)",
+   "body": "A drilled well fitted with a hand pump, bringing safe, plentiful groundwater to 160 people in Tahtay Kalat. Funded by the Humble Bundle community through charity: water, and built by REST as local implementing partner — one of the projects that made REST charity: water's partner on the ground in Tigray.",
+   "image": "",
+   "ext": "https://www.charitywater.org/projects/243-162",
+   "lat": 14.1,
+   "lng": 38.2
+  },
+  {
+   "slug": "gereb-giba-diversion",
+   "title": "Gereb Giba Diversion",
+   "type": "River diversion",
+   "woreda": "Tanqua Abergelle",
+   "tabia": "Gereb Giba",
+   "year": "In service",
+   "stat": {
+    "label": "Irrigable capacity",
+    "value": "≈500 ha"
+   },
+   "funder": "REST & partners",
+   "partner": "Community of Tanqua Abergelle",
+   "body": "A concrete river diversion that redirects seasonal flow into irrigation canals, serving roughly five hundred hectares of farmland in Tanqua Abergelle. Diversions like Gereb Giba turn one unreliable rainy season into two growing seasons.",
+   "image": "Tanqua Abergelle, Gereb Giba Diversion serving capacity of 500hr.JPG-1765870175721-45058016.JPG",
+   "lat": 13.23,
+   "lng": 38.98
+  },
+  {
+   "slug": "addis-alem-earth-dam",
+   "title": "Addis Alem Earth Dam",
+   "type": "Earth dam",
+   "woreda": "Gulo Mekada",
+   "tabia": "Addis Alem",
+   "year": "Completed",
+   "stat": {
+    "label": "Structure",
+    "value": "Earth dam"
+   },
+   "funder": "REST & partners",
+   "partner": "Community of Addis Alem",
+   "body": "A completed earth dam at Tabia Addis Alem that captures runoff for dry-season use — watering livestock, recharging wells, and holding the hillside together during the rains.",
+   "image": "Completed Earth Dam at Wereda Gulo Mekada, Tabia Addis Alem.JPG-1765871166879-382513598.JPG",
+   "lat": 14.43,
+   "lng": 39.53
+  },
+  {
+   "slug": "aynalem-river-diversion",
+   "title": "Aynalem River Diversion",
+   "type": "River diversion",
+   "woreda": "Kilte Awlaelo",
+   "tabia": "Aynalem",
+   "year": "2016 → 2019",
+   "stat": {
+    "label": "Built",
+    "value": "2016–2019"
+   },
+   "funder": "REST & partners",
+   "partner": "Community of Aynalem",
+   "body": "Begun in December 2016 and completed in September 2019, the Aynalem diversion carries river water to smallholder plots in Kilte Awlaelo. Three years of construction, decades of harvests.",
+   "image": "ii River Diversion Completed at Wereda Kilte Awlaelo Tabia Aynalem 28-9-2019.JPG-1765870768184-631143772.JPG",
+   "lat": 13.77,
+   "lng": 39.58
+  },
+  {
+   "slug": "mai-tekli-diversion",
+   "title": "Mai Tekli Diversion",
+   "type": "River diversion",
+   "woreda": "Saharti Samre",
+   "tabia": "Mai Tekli",
+   "year": "Newly completed",
+   "stat": {
+    "label": "Status",
+    "value": "Newly completed"
+   },
+   "funder": "REST & partners",
+   "partner": "Community of Mai Tekli",
+   "body": "The newly completed river diversion at Tabia Mai Tekli extends irrigation to farmland in Saharti Samre — part of the same watershed logic that runs through every REST structure: slow the water down, put it to work.",
+   "image": "Newly Completed River Diversion, Wereda Saharti Samre Tabia Mai Tekli.JPG-1765871276434-382074431.JPG",
+   "lat": 13.24,
+   "lng": 39.14
+  },
+  {
+   "slug": "gonek-water-point",
+   "title": "Gonek Water Point",
+   "type": "Water point",
+   "woreda": "Hintalo Wejerat",
+   "tabia": "Genti",
+   "year": "In service",
+   "stat": {
+    "label": "Serves",
+    "value": "Village of Genti"
+   },
+   "funder": "REST WASH program",
+   "partner": "Genti water committee",
+   "body": "A maintained community water point at Gonek, Tabia Genti. REST crews rehabilitate and maintain points like this across conflict- and climate-affected woredas, prioritizing children, pregnant women, and the elderly.",
+   "image": "Beneficiary at Wereda Hintalo Wejerat Tabia Genti, Gonek Water Point.JPG-1765720465287-49401831.JPG",
+   "lat": 13.26,
+   "lng": 39.52
+  },
+  {
+   "slug": "daba-gray-water-point",
+   "title": "Daba Gray Water Point",
+   "type": "Water point",
+   "woreda": "Kola Tembien",
+   "tabia": "Debre Genet",
+   "year": "Restored 2024",
+   "stat": {
+    "label": "Restored",
+    "value": "2024"
+   },
+   "funder": "REST WASH program",
+   "partner": "Community of Debre Genet",
+   "body": "After two years of waterborne disease from dirty sources, the community of Debre Genet and REST restored safe water at Daba Gray. \"Our children were sick for two years,\" said Adane Niguse, a father of six — now the point runs clean.",
+   "image": "commite-3.PNG-1720554605896-80708626.PNG",
+   "story": 7,
+   "lat": 13.62,
+   "lng": 38.99
+  },
+  {
+   "slug": "machew-solar",
+   "title": "Machew Seglament Solar Scheme",
+   "type": "Solar water scheme",
+   "woreda": "Endamehoni",
+   "tabia": "L-Machew Seglament",
+   "year": "2024",
+   "stat": {
+    "label": "Powered by",
+    "value": "Solar"
+   },
+   "funder": "REST & partners",
+   "partner": "Community of Seglament",
+   "body": "A solar-powered water scheme photographed in July 2024 — panels above, pump below, no fuel costs forever after. Solar schemes are how remote tabias get reliable water without a supply chain.",
+   "image": "L-Machew Seglament Solar 26-7-2024 (2).JPG-1765871407406-834132804.JPG",
+   "lat": 12.79,
+   "lng": 39.54
+  },
+  {
+   "slug": "meago-gully-restoration",
+   "title": "Meago Gully Restoration",
+   "type": "Land restoration",
+   "woreda": "Kilte Awlaelo",
+   "tabia": "Meago",
+   "year": "2016",
+   "stat": {
+    "label": "Treated",
+    "value": "Large gully"
+   },
+   "funder": "REST NRM program",
+   "partner": "Community of Meago",
+   "body": "A large erosion gully at Meago after treatment: check dams, terracing, and replanting that turn a wound in the land back into soil that holds. Land restoration is the quiet work underneath every harvest.",
+   "image": "2 Large gully after Treatment Kilite Awulaelo,  Meago 26-9-2016.JPG-1765870684869-443958695.JPG",
+   "lat": 13.8,
+   "lng": 39.55
+  },
+  {
+   "slug": "hadint-seedlings",
+   "title": "Hadint Reforestation",
+   "type": "Land restoration",
+   "woreda": "Kilte Awlaelo",
+   "tabia": "Hadint",
+   "year": "Ongoing",
+   "stat": {
+    "label": "Next",
+    "value": "Tree seedlings"
+   },
+   "funder": "REST NRM program",
+   "partner": "Community of Hadint",
+   "body": "Tree seedlings staged for planting at Tabia Hadint — the next generation of ground cover for a watershed that REST and the community have been rebuilding hillside by hillside.",
+   "image": "Tree Seedlings to be planted at Wereda Kilte Awulaelo Tabia Hadint.JPG-1765872232744-406471303.JPG",
+   "lat": 13.75,
+   "lng": 39.57
+  }
+ ]
+}

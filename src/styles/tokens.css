@@ -1,0 +1,80 @@
+/* ============================================================
+   REST · design tokens — light editorial
+   White ground, warm ink, REST's own green as the single accent.
+   Photography carries the atmosphere; the chrome stays quiet.
+   ============================================================ */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/fraunces-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+2013-2014, U+2018-201A, U+201C-201E, U+2026, U+2030;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/fraunces-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+2013-2014, U+2018-201A, U+201C-201E, U+2026, U+2030;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('/fonts/archivo-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+2013-2014, U+2018-201A, U+201C-201E, U+2026, U+2030;
+}
+@font-face {
+  font-family: 'Noto Serif Ethiopic';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/noto-ethiopic-script.woff2') format('woff2');
+  unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF, U+AB00-AB2F;
+}
+
+:root {
+  /* ground */
+  --bg: #fdfcfa;
+  --surface: #ffffff;
+  --tint: #f4f1e9;
+  --line: #e3dfd4;
+  --line-soft: #edeae1;
+
+  /* voice */
+  --ink: #1b1a16;
+  --ink-soft: #56534a;
+  --ink-dim: #8a867b;
+
+  /* accents — REST's actual brand green, kept and honored */
+  --green: #53900f;
+  --green-deep: #3d6b0b;
+  --accent: #53900f;
+  --river: #4e7e93;
+
+  /* dark counter-band (footer CTA) */
+  --earth: #191813;
+  --earth-text: #f2efe8;
+
+  /* type */
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Archivo', system-ui, sans-serif;
+  --geez: 'Noto Serif Ethiopic', 'Abyssinica SIL', Ebrima, Kefa, serif;
+
+  /* rhythm */
+  --w-content: 1200px;
+  --w-prose: 66ch;
+  --pad-x: clamp(20px, 4vw, 48px);
+  --band-y: clamp(72px, 9vw, 132px);
+
+  --ease-out: cubic-bezier(0.2, 0.65, 0.2, 1);
+}
+
+:lang(ti), :lang(am) {
+  letter-spacing: 0;
+}

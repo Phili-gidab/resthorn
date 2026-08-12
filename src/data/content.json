@@ -1,0 +1,746 @@
+{
+ "about": {
+  "establishment": {
+   "en": "REST Founded in May 1978, the Relief Society of Tigray (REST) emerged during one of the most challenging periods in Ethiopia’s history. It was established to respond to the dire humanitarian needs of the Tigrayan people affected by famine, displacement, and conflict. Over the decades, REST has evolved from an emergency relief organization into a leading development and resilience agency, dedicated to saving lives, restoring livelihoods, and empowering communities across Tigray.",
+   "ti": "ምምስራት ማሕበር ረድኤት ትግራይ (REST) ​​ኣብ ግንቦት 1978 ዓ.ም",
+   "am": "የትግራይ መረዳጃ ማህበር ምስረታ በግንቦት 1978 ዓ.ም"
+  },
+  "mission": {
+   "en": "To play a central role in transforming the socio-economic and livelihood systems of Tigray by increasing community resilience, promoting sustainability, strengthening climate change adaptation, and improving household income ultimately stimulating broader economic growth and recovery for a brighter future.",
+   "ti": "REST ዝተባህለ ናይ ልምዓት ትካል ኣብ ውሽጢ ዝተፈላለዩ ፖሊሲታት ዝሰርሕ ኮይኑ፡ ንኣብነት፤ ሃገራዊ ትልሚ ዕብየትን ትራንስፎርሜሽንን II ክልል ትግራይ ናይ 5 ዓመት ስትራተጂካዊ ትልሚ ሃገራውን ዞባውን ፖሊሲታት ምሕደራ ሓደጋ ሓደጋን ለውጢ ክሊማን ሃገራዊ መደብ ኣፍራዪ ድሕነት መርበብ ሃገራዊ መደብን ስትራተጂን ኣመጋግባ",
+   "am": "REST፣ የልማት ድርጅት፣ የሚከተሉትን ጨምሮ በተለያዩ ፖሊሲዎች ማዕቀፍ ውስጥ ይሰራል፡- ሀገራዊ የእድገትና ትራንስፎርሜሽን እቅድ II የትግራይ ክልል የ5 ዓመት ስትራቴጂክ እቅድ በአደጋ ስጋት አስተዳደር እና በአየር ንብረት ለውጥ ላይ ብሔራዊ እና ክልላዊ ፖሊሲዎች ብሔራዊ የምርት ሴፍቲኔት ፕሮግራም ብሔራዊ የአመጋገብ ፕሮግራም እና ስትራቴጂ"
+  },
+  "vision": {
+   "en": "A future where all people enjoy security, well-being, human rights, and equitable access to a dignified standard of living, with equal opportunities for development and prosperity.",
+   "ti": "ኩሉ ሰብ ውሕስነት፣ ጽቡቕ ሂወት፣ ሰብኣዊ መሰላትን ጭዋ ደረጃ መነባብሮ፣ ዕድላት ልምዓትን ረብሓታትን ፍትሓዊ ተበጻሕነት ዝረኽበሉ መጻኢ።",
+   "am": "ሁሉም ሰዎች ደህንነትን፣ ደህንነትን፣ ሰብአዊ መብቶችን እና ፍትሃዊ የኑሮ ደረጃን፣ የልማት እድሎችን እና ጥቅሞችን የማግኘት ዕድል የሚያገኙበት የወደፊት ጊዜ።"
+  },
+  "values": {
+   "en": "At REST, our work is guided by a commitment to: Human Dignity – Upholding the value and rights of every person we serve. Equity and Inclusion – Ensuring fair access to opportunities and resources for all, especially the most vulnerable. Accountability and Transparency – Building trust through honesty, integrity, and responsible stewardship of resources. Resilience and Sustainability – Promoting long-term solutions that empower communities to thrive amid challenges. ⁠⁠Collaboration and Solidarity – Working hand-in-hand with communities, partners, and stakeholders to create lasting change.",
+   "ti": "ውሕስነት መግቢ ዘይምህላው ውሱን ተበጻሕነት ሓገዝ ቅልውላው ክንክን ጥዕና ተመዛበልቲ ህዝቢ",
+   "am": "የምግብ ዋስትና ማጣት የተወሰነ የእርዳታ መዳረሻ የጤና እንክብካቤ ቀውስ የተፈናቀሉ ሰዎች"
+  }
+ },
+ "history": [
+  {
+   "year": "1978",
+   "yearTri": {
+    "en": "1978",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Founded in May 1978, the Relief Society of Tigray (REST) emerged during one of the most challenging periods in Ethiopia’s history. It was established to respond to the dire humanitarian needs of the Tigrayan people affected by famine, displacement, and conflict. Over the decades, REST has evolved from an emergency relief organization into a leading development and resilience agency, dedicated to saving lives, restoring livelihoods, and empowering communities across Tigray.",
+    "ti": "ምምስራት ማሕበር ረድኤት ትግራይ (REST) ​​ኣብ ግንቦት 1978 ዓ.ም",
+    "am": "የትግራይ መረዳጃ ማህበር ምስረታ በግንቦት 1978 ዓ.ም"
+   },
+   "image": "history-1.jpg-1720709206099-955061629.jpg"
+  },
+  {
+   "year": "1984-85",
+   "yearTri": {
+    "en": "1984-85",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Responding to the famine, supporting more than 200,000 affected by the grate famine of 1984/85 in north Ethiopia, mainly through cross-boarder operation (in Sudan and Tigray) to save lives. REST also supported repatriation and rehabilitation of more than 160,000 people",
+    "ti": "ነቲ ጥሜት ምላሽ ብምሃብ፣ ኣብ ሰሜን ኢትዮጵያ ብ1984/85 ብዘጋጠመ ጥሜት ግሬት ዝተሃስዩ ልዕሊ 200 ሽሕ፣ ብቐንዱ ብስግረ-ዶባዊ ስርሒት (ኣብ ሱዳንን ትግራይን) ህይወት ንምድሓን ምድጋፍ። REST ንልዕሊ 160 ሽሕ ሰባት ናብ ሃገሮም ንምምላስን ንምሕዋይን እውን ደጊፉ እዩ።",
+    "am": "በ1984/85 በሰሜን ኢትዮጵያ በተከሰተው የረሃብ አደጋ የተጎዱ ከ200,000 በላይ የሚሆኑ ሰዎችን በመደገፍ በዋናነት ድንበር ተሻጋሪ ዘመቻ (በሱዳን እና ትግራይ) ህይወትን ለማዳን ድጋፍ አድርጓል። REST ከ160,000 በላይ ሰዎችን ወደ አገራቸው መመለስ እና ማገገሚያ ደግፏል"
+   },
+   "image": "history-2.jpg-1720709216900-741021144.jpg"
+  },
+  {
+   "year": "1991",
+   "yearTri": {
+    "en": "1991",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "REST registered as non-governmental organization (July 31, 1991)",
+    "ti": "REST ከም ዘይመንግስታዊ ትካል ተመዝጊቡ (31 ሓምለ 1991)",
+    "am": "REST እንደ መንግሥታዊ ያልሆነ ድርጅት ተመዝግቧል (ሐምሌ 31፣ 1991)"
+   },
+   "image": "history-3.png-1720709231483-172488022.png"
+  },
+  {
+   "year": "1993",
+   "yearTri": {
+    "en": "1993",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Partnership and Innovation in Rural Finance REST began working directly with USAID, becoming the first local NGO in Ethiopia to receive USAID grants. That same year, REST pioneered rural finance services in Tigray, establishing the REST Credit Scheme of Tigray (RCST), which later evolved into Dedebit Credit and Saving Institution (DECSI).",
+    "ti": "REST ብቐጥታ ምስ USAID ክሰርሕ ጀሚሩ፡ ኣብ ኢትዮጵያ ካብ USAID ሓገዝ ዝረኸበ ናይ መጀመርታ ውሽጣዊ ዘይመንግስታዊ ትካል ኮይኑ ኣሎ። REST ኣብ ትግራይ ናይ ገጠር ፋይናንስ ግልጋሎት ፈላሚ ኮይኑ REST Credit Schemes in Tigray (RCST) ብምቛም ድሒሩ ናብ DECSI ዝማዕበለ እዩ።",
+    "am": "REST ከዩኤስኤአይዲ ጋር በቀጥታ መስራት የጀመረ ሲሆን ይህም በኢትዮጵያ ውስጥ ከዩኤስኤአይዲ እርዳታ የሚቀበል የመጀመሪያው የሀገር ውስጥ መንግሥታዊ ያልሆነ ድርጅት ያደርገዋል REST በትግራይ የገጠር ፋይናንስ አገልግሎትን በትግራይ (RCST) በማቋቋም በትግራይ የገጠር ፋይናንስ አገልግሎት ፈር ቀዳጅ ሆኗል (RCST) በኋላም ወደ DECSI አድጓል።"
+   },
+   "image": "history-4.jpg-1720709304848-612623221.jpg"
+  },
+  {
+   "year": "1995",
+   "yearTri": {
+    "en": "1995",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Strategic Growth and Shift to Development REST transitioned from annual project planning to a multi-year strategic planning approach, developing its first five-year strategic plan (1995–2000). This period marked REST’s strategic shift from relief and rehabilitation toward long-term development interventions.",
+    "ti": "REST ካብ ዓመታዊ ትልሚ ኣገባብ ናብ ናይ ብዙሕ ዓመታት ስትራተጂካዊ ውጥን ኣገባብ ተሰጋጊሩ። ናይ 1ይ ናይ 5 ዓመት ስትራተጂካዊ ትልሙ (FY1995-2000) ኣዳልዩ። REST ካብ ረድኤትን ምሕዋይን ናብ ልምዓታዊ ምትእትታው ተሰጋጊሩ",
+    "am": "REST ከዓመታዊ የዕቅድ አቀራረብ ወደ የብዙ ዓመት ስትራቴጂክ ዕቅድ አቀራረብ ተንቀሳቅሷል። የ1ኛ 5 አመት ስትራቴጂክ እቅዱን (እ.ኤ.አ.1995-2000) አዘጋጅቷል። REST ከእፎይታ እና መልሶ ማቋቋም ወደ ልማት ጣልቃገብነት ተሸጋግሯል።"
+   },
+   "image": "history-5.jpg-1720709383511-397595266.jpg"
+  },
+  {
+   "year": "1998-2000",
+   "yearTri": {
+    "en": "1998-2000",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Post-Conflict Recovery and Peacebuilding Following the Ethiopia–Eritrea border conflict, REST launched initiatives to revitalize border economies through the Border Development Program and to promote community-based peacebuilding in Tigray and Afar, in partnership with the Afar Pastoralist Development Association (APDA).",
+    "ti": "ድሕሪ ግጭት ቦርደር ኢትዮ-ኤርትራ፡ REST ምስ ማሕበር ልምዓት ጓሶት ዓፋር ብምትሕብባር፡ ቁጠባዊ ምሕዋይ ኣብ ጎኒ ዶብ ዝርከቡ ሰባት (ብፕሮግራም ልምዓት ቦርደር) ንምድጋፍን፡ ማሕበረሰብ መሰረት ዝገበረ ህንጸት ሰላም (ኣብ ትግራይን ዓፋርን) ንምድንፋዕን ተበግሶታት ጀሚራ (APDA)",
+    "am": "ከኢትዮ-ኤርትራ የቦርደር ግጭት በኋላ አርኤስኤስ ከአፋር አርብቶ አደር ልማት ማህበር ጋር በመተባበር በቦርደር (በቦርደር ልማት ፕሮግራም) እና ማህበረሰብ አቀፍ የሰላም ግንባታን ለማበረታታት እንቅስቃሴ ጀምሯል። (ኤፒዲኤ)"
+   },
+   "image": "history-5 (1).jpg-1720709445916-233468266.jpg"
+  },
+  {
+   "year": "Nov 2020 onwards",
+   "yearTri": {
+    "en": "Nov 2020 onwards",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Responding to Crisis and Rebuilding Lives In the aftermath of the armed conflict in Tigray, REST once again shifted its focus to humanitarian response and early recovery, delivering lifesaving assistance while supporting communities to rebuild and recover with dignity.",
+    "ti": "ረስት ኣብ ትግራይ ድሕሪ ዘጋጠመ ዕጥቃዊ ግጭት መሊሱ ናብ ሰብኣዊ ምላሽን ብኣግኡ ምሕዋይን ተሰጋጊሩ",
+    "am": "በትግራይ በተቀሰቀሰው የትጥቅ ግጭት ምክንያት አርኤስኤስ እንደገና ወደ ሰብአዊ ምላሽ እና ቅድመ ማገገም ተለወጠ።"
+   },
+   "image": "history-6.jpg-1720709512534-843268459.jpg"
+  }
+ ],
+ "services": [
+  {
+   "title": {
+    "en": "Community based development",
+    "ti": "ማሕበረሰብ መሰረት ዝገበረ ልምዓት",
+    "am": "ማህበረሰብን መሰረት ያደረገ ልማት"
+   },
+   "body": {
+    "en": "For more than four decades, REST has championed an integrated, community-based development approach that places people at the center of progress. The organization employs participatory project and program design methods to promote poverty reduction, strengthen resilience, and enhance food and nutrition security across Tigray.",
+    "ti": "ኣብ ዝሓለፉ ኣርባዕተ ዓሰርተታት ዓመታት፡ REST ድኽነት ምንካይን ውሕስነት መግብን ኣመጋግባን ንምድንፋዕ፡ ኣሳታፊ ፕሮጀክት/ፕሮግራም ዲዛይን ኣገባብ ዝትግብረሉ ዝተዋደደ መደብ ልምዓት ማሕበረሰብ ከስፋሕፍሕ ጸኒሑ እዩ።",
+    "am": "ባለፉት አራት አስርት ዓመታት ውስጥ፣ REST የተቀናጀ የማህበረሰብ ልማት ፕሮግራምን በማስተዋወቅ ላይ ሲሆን በዚህም የድህነት ቅነሳን እና የምግብ እና የተመጣጠነ ምግብን ደህንነትን ለማጎልበት አሳታፊ የሆነ የፕሮጀክት/የፕሮግራም ዲዛይን አቀራረብን ተግባራዊ ያደርጋል።"
+   },
+   "image": "community-2.jpg-1720535436663-322800527.jpg",
+   "subs": [
+    {
+     "title": "Women's Empowerment Initiatives",
+     "body": "Supporting women’s groups through microfinance, small business development, and leadership training. The initiative enhances women’s participation in decision-making, strengthens social cohesion, and improves household economic resilience."
+    },
+    {
+     "title": "Community Health Promotion",
+     "body": "Conducting health education campaigns focusing on maternal and child health, nutrition, sanitation, and disease prevention. Local health volunteers are trained to provide basic care, refer critical cases, and mobilize communities for vaccination and health awareness events."
+    },
+    {
+     "title": "Local Agriculture Improvement Program",
+     "body": "Supporting smallholder farmers by providing training on sustainable farming techniques, access to quality seeds, fertilizers, and irrigation methods. The program promotes crop diversification, soil conservation, and organic farming practices to increase food security and household income within the community."
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Humanitarian Response",
+    "ti": "ሰብኣዊ ምላሽ",
+    "am": "የሰብአዊ ምላሽ"
+   },
+   "body": {
+    "en": "Since its establishment in 1978, REST has delivered multi-sectoral, needs-based humanitarian assistance. The organization maintains strong capacity in food distribution, emergency WASH (Water, Sanitation, and Hygiene) interventions, emergency nutrition, and protection services ,with a particular focus on supporting survivors of sexual and gender-based violence (SGBV).",
+    "ti": "REST ኣብ 1978 ካብ ዝምስረት ኣትሒዙ፡ ኣብ ብዙሕ ጽላታት፡ ኣብ ድሌታት ዝተመርኮሰ ሰብኣዊ ምላሽ ሂቡ እዩ። እቲ ትካል ኣብ ምክፍፋል መግቢ፣ ህጹጽ WASH (ማይ፣ ጽሬትን ጽሬትን) ምላሽ፣ ህጹጽ ኣመጋግባ፣ ከምኡ’ውን ናይ ምክልኻል ደገፍ ንምሃብ ሓያል ዓቕሚ ይሕሉ፣ ኣብቶም ካብ ጾታውን ጾታውን ዓመጽ ዝደሓኑ ሰባት ትኹረት ብምግባር፣ ከምኡ’ውን ንሓደጋ ናይ... ኣብ ልዕሊ ደቂ ኣንስትዮን ኣዋልድን ዝፍጸም ዓመጽ።",
+    "am": "በ1978 ከተመሠረተበት ጊዜ ጀምሮ፣ REST ዘርፈ ብዙ፣ በፍላጎት ላይ የተመሰረተ ሰብአዊ ምላሾችን ሰጥቷል። ድርጅቱ ከጾታዊ እና ጾታ-ተኮር ጥቃት የተረፉ ላይ ትኩረት በማድረግ የምግብ ስርጭት፣ የአስቸኳይ ጊዜ የንፅህና መጠበቂያ (ውሃ፣ ንፅህና እና ንፅህና) ምላሽ፣ ድንገተኛ የአመጋገብ እና የጥበቃ ድጋፍ ለማቅረብ ጠንካራ አቅም አለው። በሴቶች እና ልጃገረዶች ላይ የሚደርስ ጥቃት."
+   },
+   "image": "humanitarian.jpg-1720539740581-114150421.jpg",
+   "subs": [
+    {
+     "title": "Water and Sanitation Support",
+     "body": "This initiative focuses on the maintenance, rehabilitation, and construction of water schemes while delivering health education and promoting hygiene and sanitation. It aims to equip communities in conflict- and climate change-affected areas of Tigray, northern Ethiopia, with essential tools. Targeting vulnerable households—particularly children, pregnant women, and the elderly—this program ensures access to WASH (Water, Sanitation, and Hygiene) facilities in emergency situations."
+    },
+    {
+     "title": "Emergency Food Distribution",
+     "body": "Implementing an emergency food distribution program in Tigray to address immediate hunger needs for conflict-affected households. This initiative specifically targets the most vulnerable populations, including children under five, pregnant and lactating women, the elderly, IDPs and persons with disabilities. The food rations provided consist of essential items such as cereal, vegetable oil, and yellow split peas, all aimed at saving lives and promoting nutritional security."
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Recovery or Rehabilitation",
+    "ti": "ምሕዋይ ወይ ምሕዋይ",
+    "am": "ማገገም ወይም ማገገሚያ"
+   },
+   "body": {
+    "en": "While addressing immediate humanitarian needs, REST also adopts a continuum approach that bridges emergency relief with long-term recovery and development. The organization provides needs-based, multisectoral recovery and rehabilitation support to communities affected by conflict, displacement, and climate shocks—focusing primarily on agricultural recovery, livelihood restoration, and community resilience.",
+    "ti": "ሰብኣዊ ድሌታት ኣብ ዝምልሰሉ እዋን፡ REST ንናይ ምሕዋይን ምሕዋይን ምትእትታው ንምምራሕ ኣብ ዝተሰፈረን ቀጻልን ኣገባብ እውን ይኣምን። REST ንዝተጎድኡ ማሕበረሰባት ብቐንዱ ኣብ መዳያት ምሕዋይ ሕርሻ፣",
+    "am": "የሰብአዊ ፍላጎቶችን በሚፈታበት ጊዜ፣ REST የማገገሚያ እና የመልሶ ማቋቋም እርምጃዎችን ለመምራት ጎጆ እና ቀጣይነት ያለው አቀራረብን ያምናል። REST ለተጎዱ ማህበረሰቦች በፍላጎት ላይ የተመሰረተ ዘርፈ ብዙ የማገገሚያ እና የማገገሚያ ድጋፍ ይሰጣል፣በዋነኛነት በግብርና ማገገሚያ አካባቢዎች፣"
+   },
+   "image": "recovery.jpg-1720535250500-532138425.jpg",
+   "subs": []
+  }
+ ],
+ "faqs": [
+  {
+   "q": {
+    "en": "What is REST?",
+    "ti": "REST እንታይ እዩ?",
+    "am": "REST ምንድን ነው?"
+   },
+   "a": {
+    "en": "REST (Relief Society of Tigray) is a registered non-governmental organization (NGO) in Ethiopia, established in 1978.",
+    "ti": "REST (Relief Society of Tigray) ኣብ ኢትዮጵያ ምዝጉብ ዘይመንግስታዊ ትካል (NGO) ኮይኑ፡ ኣብ 1978 ዓ.ም.",
+    "am": "REST (የትግራይ መረዳጃ ማህበር) በኢትዮጵያ የተመዘገበ መንግሥታዊ ያልሆነ ድርጅት (መያድ) ሲሆን በ1978 የተመሰረተ ነው።"
+   }
+  },
+  {
+   "q": {
+    "en": "What is REST's mission?",
+    "ti": "ተልእኾ REST እንታይ እዩ?",
+    "am": "የREST ተልዕኮ ምንድን ነው?"
+   },
+   "a": {
+    "en": "REST’s mission is to promote self-reliant and sustainable development, focusing on supporting smallholder agricultural households and communities.",
+    "ti": "ተልእኾ REST ንኣናእሽቱ ሕርሻዊ ስድራቤታትን ማሕበረሰባትን ኣብ ምድጋፍ ዘተኮረ ርእሰ-ምርኮሳን ዘላቕን ልምዓት ምድንፋዕ እዩ።",
+    "am": "የREST ተልእኮ አነስተኛ ይዞታ ያላቸውን የግብርና ቤተሰቦች እና ማህበረሰቦችን በመደገፍ ላይ በማተኮር በራስ የሚተማመን እና ዘላቂ ልማትን ማስተዋወቅ ነው።"
+   }
+  },
+  {
+   "q": {
+    "en": "What are REST's core values?",
+    "ti": "ቀንዲ ክብርታት REST እንታይ እዮም?",
+    "am": "የREST ዋና እሴቶች ምንድን ናቸው?"
+   },
+   "a": {
+    "en": "REST prioritizes serving and advocating for people, especially marginalized groups. We believe in equality, inclusion, participation, accountability, transparency, promoting resilience, and self-reliance.",
+    "ti": "REST ንሰባት ብፍላይ ድማ ንዝተገለሉ ጉጅለታት ምግልጋልን ምጉስጓስን ቀዳምነት ይህብ። ኣብ ማዕርነት፡ ምትእትታው፡ ተሳትፎ፡ ተሓታትነት፡ ግሉጽነት፡ ምድንፋዕ ጽንዓት፡ ከምኡ’ውን ርእሰ-ምርኮሳ ንኣምን።",
+    "am": "REST ሰዎችን በተለይም የተገለሉ ቡድኖችን ለማገልገል እና ለመደገፍ ቅድሚያ ይሰጣል። በእኩልነት፣ በማካተት፣ በመሳተፍ፣ በተጠያቂነት፣ በግልጸኝነት፣ በጽናት ማሳደግ እና በራስ መተማመን እናምናለን።"
+   }
+  },
+  {
+   "q": {
+    "en": "What kind of work does REST do?",
+    "ti": "REST እንታይ ዓይነት ስራሕ እዩ ዝሰርሕ?",
+    "am": "REST ምን አይነት ስራ ይሰራል?"
+   },
+   "a": {
+    "en": "REST works in humanitarian response, recovery/rehabilitation, and community-based development.",
+    "ti": "REST ኣብ ሰብኣዊ ምላሽ፣ ምሕዋይ/ምሕዋይ፣ ከምኡ እውን ኣብ ማሕበረሰብ ዝተመስረተ ልምዓት ይሰርሕ።",
+    "am": "REST በሰብአዊ ምላሽ፣ በማገገም/በማገገሚያ እና በማህበረሰብ ላይ የተመሰረተ ልማት ይሰራል።"
+   }
+  },
+  {
+   "q": {
+    "en": "What are some examples of REST's humanitarian response activities?",
+    "ti": "ገለ ኣብነታት ናይ REST ሰብኣዊ ምላሽ ዝገብሮ ንጥፈታት እንታይ እዮም?",
+    "am": "የREST የሰብአዊ ምላሽ እንቅስቃሴዎች አንዳንድ ምሳሌዎች ምንድናቸው?"
+   },
+   "a": {
+    "en": "REST provides food distribution, emergency WASH (Water, Sanitation, and Hygiene) services, emergency nutrition support, protection services, and non-food items (NFI) to those affected by conflict or crises.",
+    "ti": "REST ብግጭት ወይ ቅልውላው ንዝተሃስዩ ሰባት ናይ ምክፍፋል መግቢ፣ ህጹጽ WASH (ማይ፣ ጽሬትን ጽሬትን) ኣገልግሎት፣ ህጹጽ ደገፍ ኣመጋግባ፣ ኣገልግሎት ምክልኻል፣ ከምኡ’ውን ካብ መግቢ ወጻኢ ዝኾኑ ነገራት (NFI) ይህብ።",
+    "am": "REST በግጭት ወይም ቀውሶች ለተጎዱት የምግብ ማከፋፈያ፣ የድንገተኛ ጊዜ እጥበት (ውሃ፣ ሳኒቴሽን እና ንፅህና) አገልግሎቶች፣ የድንገተኛ የአመጋገብ ድጋፍ፣ የጥበቃ አገልግሎቶች እና ምግብ ነክ ያልሆኑ ነገሮችን (NFI) ያቀርባል።"
+   }
+  },
+  {
+   "q": {
+    "en": "What are some examples of REST's recovery/rehabilitation efforts?",
+    "ti": "ገለ ኣብነታት ናይ REST ናይ ምሕዋይ/ምሕዋይ ጻዕርታት እንታይ እዮም?",
+    "am": "የREST የማገገሚያ/የማገገሚያ ጥረቶች አንዳንድ ምሳሌዎች ምንድናቸው?"
+   },
+   "a": {
+    "en": "REST supports communities by providing agricultural recovery support, natural resource management assistance, irrigation rehabilitation, health services, and education support.",
+    "ti": "REST ንናይ ሕርሻ ምሕዋይ ደገፍ፣ ናይ ተፈጥሮ ሃፍቲ ምሕደራ ሓገዝ፣ ናይ መስኖ ምሕዋይ፣ ናይ ጥዕና ኣገልግሎት፣ ከምኡ እውን ናይ ትምህርቲ ደገፍ ብምሃብ ንማሕበረሰባት ይድግፍ።",
+    "am": "REST የግብርና ማገገሚያ ድጋፍን፣ የተፈጥሮ ሀብት አስተዳደር እገዛን፣ የመስኖ ማገገሚያን፣ የጤና አገልግሎቶችን እና የትምህርት ድጋፍን በመስጠት ማህበረሰቦችን ይደግፋል።"
+   }
+  },
+  {
+   "q": {
+    "en": "What are some examples of REST's community-based development programs?",
+    "ti": "ገለ ኣብነታት ናይቲ ኣብ ማሕበረሰብ ዝተመርኮሰ መደባት ልምዓት REST እንታይ እዮም?",
+    "am": "የREST ማህበረሰብ-ተኮር የልማት ፕሮግራሞች አንዳንድ ምሳሌዎች ምንድናቸው?"
+   },
+   "a": {
+    "en": "REST focuses on climate-adaptive villages, integrated watershed development models, value chain-based livelihood development, building community institutions, and promoting youth and women’s empowerment.",
+    "ti": "REST ኣብ ክሊማ ዝምጥን ዓድታት፣ ዝተዋደደ ሞዴላት ልምዓት ማይ-ተፋሰስ፣ ኣብ ሰንሰለት እሴት ዝተመስረተ ልምዓት መነባብሮ፣ ምህናጽ ማሕበረሰባዊ ትካላት፣ ከምኡ’ውን ምድንፋዕ ምሕያል መንእሰያትን ደቂ ኣንስትዮን ዘተኮረ እዩ።",
+    "am": "REST የሚያተኩረው ለአየር ንብረት ተስማሚ የሆኑ መንደሮች፣ የተቀናጁ የተፋሰስ ልማት ሞዴሎች፣ የእሴት ሰንሰለት ላይ የተመሰረተ የኑሮ ልማት፣ የማህበረሰብ ተቋማትን በመገንባት፣ እና የወጣቶች እና ሴቶችን አቅም በማጎልበት ላይ ነው።"
+   }
+  }
+ ],
+ "stories": [
+  {
+   "title": {
+    "en": "Mr. Ervin Jose Masinga, the U.S. Ambassador to Ethiopia, visited the Maywoni IDP Center in Mekelle,",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "🌍 His Excellency Mr. Ervin Jose Masinga, the U.S. Ambassador to Ethiopia, visited the Maywoni IDP Center in Mekelle, where monthly rations are distributed by JEOP/REST. During his visit, he observed the conditions faced by internally displaced persons (IDPs) and engaged in discussions with IDP members. 🙏 We extend our heartfelt gratitude to the people and government of the United States 🇺🇸, as well as CRS Ethiopia, for their invaluable support to our community. U.S. Embassy Addis Ababa",
+    "ti": "",
+    "am": ""
+   },
+   "date": "July, 15, 2026",
+   "image": "3.JPG-1784549947436-346917425.JPG"
+  },
+  {
+   "title": {
+    "en": "Advancing Irrigation Restoration despite",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "🌾 Resilience in Action: Despite the steep rise in fuel costs and pressing economic challenges, our irrigation restoration efforts are pushing forward! 💧 We are actively rebuilding and modernizing critical water systems to safeguard smallholder farming communities against climate shocks. This vital work wouldn't be possible without the steadfast backing of our incredible partners and donors: World Food Programme (WFP) 🌍 IFAD-PACT (Participatory Agriculture and Climate Transformation) Development Fund Norway - ARCS (Agricultural Resilience through Climate Services) Thank you for investing in sustainable food systems and long-term climate resilience! 🚀 #ClimateAction #SustainableAgriculture #communitysupport #IrrigationRestoration",
+    "ti": "",
+    "am": ""
+   },
+   "date": "June, 18, 2026",
+   "image": "WhatsApp Image 2026-06-15 at 3.00.30 PM.jpeg-1781755012094-645603072.jpeg"
+  },
+  {
+   "title": {
+    "en": "High level guests, including U.S. Government and CRS Ethiopia representatives",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "🌍✨ High-level guests, including U.S. Government and CRS Ethiopia representatives, are on the ground at REST's JEOP Emergency Food Distribution Points in Wukro and Hawzen. 👥💬 They engaged in meaningful conversations with internally displaced persons (IDPs) about their living conditions while witnessing live food distributions in action. 🙏 Mr. Teklewoini Assefa, Executive Director of REST, expressed heartfelt gratitude for the unwavering support from the U.S. Government and the American people. 📅 Stay tuned as the visit continues tomorrow in the central zone! A huge thank you to the U.S. Government for standing by our communities! 💙 U.S. Embassy Addis Ababa #CommunitySupport #HumanitarianAid",
+    "ti": "",
+    "am": ""
+   },
+   "date": "January, 27, 2026",
+   "image": "622056708_933312852693259_1032313403385412205_n.jpg-1769756363425-661957159.jpg"
+  },
+  {
+   "title": {
+    "en": "Regional Consultation Workshop on the Vulnerability Based Targeted (VBT) Implementation",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Today, we’re hosting a Regional Consultation Workshop on the Vulnerability-Based Targeted (VBT) Implementation Process, uniting key government stakeholders from across the region down to the woreda level. 🤝 We dove into essential requirements for the upcoming VBT phase, including: ✅ Developing a high-level action plan for both woreda and kebele levels ✅ Setting dates for meetings and training sessions ✅ Communicating plans well in advance for smooth execution With a clear timeline in place, we’re gearing up for the January 2026 caseload allocation using new VBT case management results. ⏳ It’s crucial that we manage and execute this process on time! Deputy Commissioner DRMC, Mr. G'her Aregawi emphasized our collective responsibility to finalize the VBT based on community vulnerabilities, highlighting the need for clarity and transparency in directing aid where it’s needed most. 👐 Let’s choose our data collectors and supervisors wisely—they play a vital role in this process! Mr. Muez Muruts from REST reminded us of the importance of collaboration and commitment to completing this process responsibly, ensuring proper data updating, registration, and verification. 📊 A big thank you to the U.S. government and CRS Ethiopia for their unwavering support for our communities affected by conflict and climate change. Together, we can achieve even more! 💪✨ #CommunitySupport #Collaboration",
+    "ti": "",
+    "am": ""
+   },
+   "date": "December, 15, 2025",
+   "image": "REST news.jpeg-1765792387058-541500987.jpeg"
+  },
+  {
+   "title": {
+    "en": "Mr. Zlatan Milisic, the World Food Program (WFP) Director for Ethiopia, recently started visiting",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "🌍✨ Exciting news from Tigray! Mr. Zlatan Milisic, the World Food Program (WFP) Director for Ethiopia, recently started visiting Livelihood Recovery and Resilience Enhancement programs, implemented by REST and supported by WFP. On the first day of his visit in the Raya Azebo woreda, particularly in the Tsigea tabia, he explored newly constructed irrigation systems, seed cooperatives, and Sorghum cluster produce farmers. This program is making a significant shift from lifesaving to life-changing initiatives! Stay tuned for more updates as the visit continues with other impactful interventions. A huge thank you to WFP for your unwavering commitment to transforming the lives of the people of Tigray! #Resilience #Livelihoods #ChangeMakers",
+    "ti": "",
+    "am": ""
+   },
+   "date": "December, 8, 2025",
+   "image": "1000058982.jpg-1765271835251-647467726.jpg"
+  },
+  {
+   "title": {
+    "en": "Launching Resilient Program",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "Thrilled to announce that today we have launched Resilient Program in collaboration with Oxfam , Oxfam in Ethiopia, rolling out across six woredas: Maykinetal, Keyihtekli, Sharti, Samre, Hawuzen, and Tsiraewomberta! A big thank you to the Italian Agency for Development Cooperation for being our donor! 🙌 ✨ What’s Our Mission? • Boosting Resilience: Empowering small-scale farmers to enhance their productivity and nutritional value. • Empowering Women: Elevating women's roles in food security and nutrition. • Strengthening Markets: Equipping market actors and rural financial institutions to better support our farmers. 💪 With this initiative, we’ll be supporting around 2,254 households partnering with the Tigray Bureau of Agriculture and Rural Development, Dedebit Credit and Savings Institution, Mekelle University, and other organizations. 🌍💚 over 2.1 million Euros will be invested to help build a brighter future for our communities! A heartfelt thank you to the Italian Agency for Development Cooperation and Oxfam for their support to those affected by conflict. Let’s pave the way for resilience and growth together! 🚀",
+    "ti": "",
+    "am": ""
+   },
+   "date": "November, 19, 2025",
+   "image": "584783046_879796961378182_3976573980682732546_n.jpg-1763555257585-113446548.jpg"
+  },
+  {
+   "title": {
+    "en": "ዋዕላ ዘይሕጋዊ ዝውውርን ሰብኣዊ ሓገዝ ንምክልኻል",
+    "ti": "",
+    "am": ""
+   },
+   "body": {
+    "en": "ማረት-ጥቅምቲ 06, 2018 ማሕበራዊ ረድኤት ትግራይ (ማረት) መደብ ህፁፅ ስራሕቲ ሰብኣዊ ሓገዝ(JEOP) ኣቢሉ መሸጣን ዘይሕጋዊ ዝውውርን ሰብኣዊ ሓገዝ ንምክልኻል ዝዓለመ ኣገዳሲ ዋዕላ ኣብ ከተማ ውቕሮ ኣካይዱ። ኣብቲ መድረኽ ወሰንቲ ዝብሃሉ መድረግቲ ኣካላት ካብ ክልል ኣብያተ ዕዮ፣ ዞባን ወረዳታትን ከንቲባ ምምሕዳራትን ኣብ ዝተረኸቡሉ ዝተኻየደ ኮይኑ ህፁፅ ሰብኣዊ ሓገዝ ናብ ዝምልከቶም ተጠቀምቲ ንምብፃሕ ሓበራዊ ስራሕ መድረግቲ ኣካላት ወሳናይ ግደ ከም ዘለዎ ተገሊፁ። ኣብ መኽፈቲ እቲ ዋዕላ ምክትል ዋና ዳይሬክተርን ሓላፊ ፕሮግራማትን ማረት ኣይተ ጌታቸው ካልኣዩ ማረት ህዝቢ ትግራይ ብዝተፈላለዩ ስራሕቲ ልምዓት፣ ስራሕቲ ህፁፅ ሓገዝን ምትካል እግርን ብምትግባር ብፍላይ ድማ ብህፁፅ ሓገዝ ምግቢ፣ ንህዝቢ ትግራይ ንምድጋፍ ዘበርከተቶምን እተበርክቶም ዘላን ዓብይቲ ስራሕቲ ብምጥቃስ ፤ እዚ ምስ ካቶሊክ ሪሊፍ ሰርቪስ (CRS) ብምትሕብባር ዝካየድ መደብ ህፁፅ ሰብኣዊ ሓገዝ ምግቢ ብሓገዝ USAID/BHA እንትኸውን ንብርክት ዝበሉ ዓማውቲ ስራሕቲ ምድሓን ህይወት እናተሰረሐ ምፅንሑ ብምዝኽኻር ብፍላይ ድማ ኣብ ትግራይ ንዘጋጠመ ኲናት ስዒቡ ህዝቢ ትግራይ ንዘጋጠሞ ዓፀቦ ካብ USAID/BHA ዝተረኸበ ሓገዛት ንህይወት ኣማኢት ኣሽሓት ኣድሒኑ እዩ ኢሎም።እዚ ሓገዝ ቀፃልነት ክህልዎን በቲ ዝተደለየ ቅንዕናን ንምፍፃም ንመምርሒታትን ኣሰራርሓታትን እቲ ፕሮግራም ብጥብቂ ምኽታል ከም ዝግባእን ፍሉይ ትኹረት ሂብካ ምስራሕ ከም ዘድልን ገሊፁ። መበገሲ ኣብቲ መድረኽ ዝቐረቡ ፅሑፋት ብኣይተ ሙእዝ ሙሩፅ፣ መተሓባበሪ መደባት ህፁፅ ስራሕቲ ሰብኣዊ ሓገዝ (JEOP) ማረት፣ ብዛዕባ ኣሰራርሓታትን ሓፈሻዊ ፍፃመታትን፣ ኣብ ምብፃሕ ሰብኣዊ ሓገዝ ዘጋጥሙ ፀገማትን ቀፀልቲ ክኾኑ ዘለዎም ነገራት ብሰፊሑ ዝቐረበ እንትኸውን ፣ ብቢሮ ፍትሒ ትግራይ ድማ ኣብ ኢትዮጵያ ሓደጋ ስግኣት ኣመራርሓ ኮሚሽን ኣዋጅ ቁፅሪ 1386/ 2017 መሰረት ገይሩ መሸጣን ዝውውር ሰብኣዊ ሓገዝ ንምቁፅፃር ዝወፀ ኣዋጅን ካልኦት ኣሰራርሓታትን ብዝርዝር ዘቕረበ እንትኸውን ፤ ብበዓል መዚ ቁፅፅር ምግብን መድሓኒትን ትግራይ ድማ፣ ብፍላይ ብዛዕባ ምሕደራ ሓገዝ ዘተኩር ኣዋጅ ቁጽሪ 1112/20219 ክውሰዱ ዝኽእሉ ስጉምትታትን ዝምልከት ቀሪቡ እዩ። እዞም ዘቐረቡ ኣዋጃት ፣ መምርሕታትን ኣሰራርሓታትን መሸጣ ኮነ ዘይሕጋዊ ዝውውር ዝኾነ ይኹን ሰብኣዊ ሓገዝ ንምክልኻል ዝሕግዙ ሕጋዊ መሰረታት ብዝርዝር ቀሪቦም እዮም።ተሳተፍቲ ብዛዕባ መሸጣ ኮነ ዝውውር ሰብኣዊ ሓገዝ ዝምልከት በብከባቢኦም ዝጥቀሙሎም ተመኩሮታት ብምክፋል ዓሚቕን ውፅኢታውን ምይይጥ ብምክያድ፣ ሰፊሕ ተመኩሮን ትምህርትን ዝተረኸበሉ ኮይኑ በብግዚኡ ንዘጋጥሙዎም ዝተፈላለዩ ፀገማት ንምፍታሕን ኣብ መሬት ወሪዶም ብዝግባእ ዝጥቀሙሉ ዕዉታት ስትራቴጂታትን ዝያዳ ግንዛበ ንምርካብ ሓጋዛይ እዩ እቲ መድረኽ። ኣብ መወዳእታ ተሳተፍቲ፣ ማረት ብቐፃሊ ግንዛበ ንምፍጣርን፣ ኣሰራርሓታት መደብ ሰብኣዊ ሓገዝ ተሓልዩ ኣብ ፀገም ዘሎ ህዝቢ ሓገዝ ንኽረክብ እትገብሮ ንዘላ ፃዕርታት ብምንኣድ ልባዊ ምስጋናኦም ገሊፆም። እቲ ዋዕላ፣ ብዝያዳ ሓበራዊ ግብረ ሓይሊታት ምትሕብባርን ብምጥንኻርን ንዕውትነት እቲ መደብ ሓቢሮም ክሰርሑ ብሓባራዊ ስምምዕ ተዛዚሙ። ኩሎም መድረግቲ ድማ፣ ኣሰራትሓታት ሰብኣዊ ሓገዝ ንምሕላውን፣ ንተጠቀምቲ ብብቕዓትን ግልፅነትን ከምዝበፅሕን፣ ብሓባር ንምስራሕ ቃል ዝኣተዉ እንትኾኑ፣ ኣብ ስራሕቲ ህፁፅ ሓገዝ ተሓታትነት ንምርግጋፅ ዘለዎም ተወፋይነት ኣረጋጊፆም። ዝኾነ ይኹን ኣካል ሰብኣዊ ሓገዝ ክሸይጥ ወይ ክገዝእ ወይ ብዘይ ሕጋዊ መንገዲ ከዘዋውር ዝተረኸበ ብሕጊ ከም ዝሕተት ፈሊጡ ድማ ካብዚ ተግባር ክቑጠብ ኣታሓሳሲቦም። **ል. በ:*-ማረት ካብ USAID/BHA ብዝተረከበ ሓገዝ 309,918.9 ኩንታል ብዓይነት ምግብን ልዕሊ 1.5 ቢልዮን ቀርሺ ኣብ ዝሓለፈ ሓደ ዓመት ንተጠቀምቲ ብቐጥታ ኣከፋፊላ እያ:: #ሰብኣዊሓገዝ",
+    "ti": "",
+    "am": ""
+   },
+   "date": "October, 17, 2025",
+   "image": "REST JEOP.jpeg-1763581966317-164433008.jpeg"
+  },
+  {
+   "title": {
+    "en": "Transforming Communities: The Story of Daba Gray Water Point",
+    "ti": "ማሕበረሰባት ምቕያር፡ ዛንታ ዳባ ግሬይ ዋተር ፖይንት።",
+    "am": "ማህበረሰቦችን መለወጥ፡ የዳባ ግሬይ የውሃ ነጥብ ታሪክ"
+   },
+   "body": {
+    "en": "Situated in Debre Genet Tabia’s Woreda Kola Tembien, the Daba Gray Water Point once provided a vital source of clean water for the community. However, Malfunctional issues left locals traveling long distances or resorting to gathering water from contaminated sources. “Our primary challenge is the lack of expertise and leadership to prompt action,” explains Adane Niguse, a father of six. “For the past two years, we’ve been consuming dirty water, leading to many cases of waterborne diseases like diarrhea.” Recognizing the urgency, REST prioritizes safe and clean water access. Actively engaged in maintenance, restoration, and construction efforts, REST partners with the community to address the issue.",
+    "ti": "ኣብ ወረዳ ቆላ ተምቤን ደብረ ገነት ጣብያ ዝርከብ ነጥቢ ዳባ ግሬይ ማይ ኣብ ሓደ እዋን ንማሕበረሰብ ኣገዳሲ ምንጪ ፅሩይ ማይ ዝህብ ዝነበረ እዩ። ይኹን እምበር፡ Malfunctional ጉዳያት፡ ነበርቲ እቲ ከባቢ ነዊሕ ርሕቀት ክጓዓዙ ወይ ድማ ካብ ዝተበከለ ምንጪ ማይ ንምእካብ ክጥቀሙ ገይርዎም። ኣቦ ሽዱሽተ ቆልዑ ዝኾነ ኣዳነ ንጉሰ፡ \"ቀንዲ ብድሆና ስጉምቲ ንምንቅስቓስ ክእለትን ኣመራርሓን ዘይምህላው'ዩ\" ይገልጽ። “ንዝሓለፉ ክልተ ዓመታት፡ ረሳሕ ማይ ክንወስድ ጸኒሕና፡ እዚ ድማ ብዙሓት ከም ተምላስ ዝኣመሰሉ ብማይ ዝመሓላለፉ ሕማማት የስዕቡ።” ህጹጽ ምዃኑ ብምግንዛብ፡ REST ውሑስን ጽሩይን ማይ ንምርካብ ቀዳምነት ይህብ። ኣብ ጻዕርታት ጽገና፡ ምሕዳስን ህንጸትን ብንጥፈት ዝተዋፈረ REST፡ ነቲ ጉዳይ ንምፍታሕ ምስቲ ሕብረተሰብ ይሻረኽ።",
+    "am": "በደብረ ገነት ጣብያ ወረዳ ቆላ ተምቤን የሚገኘው የዳባ ግሬይ ውሃ ነጥብ በአንድ ወቅት ለህብረተሰቡ ወሳኝ የሆነ የንፁህ ውሃ ምንጭ ይሰጥ ነበር። ነገር ግን፣ የተበላሹ ችግሮች የአካባቢው ሰዎች ረጅም ርቀት እንዲጓዙ ወይም ከተበከሉ ምንጮች ውሃ እንዲሰበስቡ አድርጓቸዋል። የስድስት ልጆች አባት የሆኑት አዳነ ንጉሴ \"የእኛ ተቀዳሚ ፈተና የባለሙያዎች እጥረት እና ፈጣን እርምጃ ለመውሰድ አመራር አለመስጠት ነው\" በማለት ያስረዳሉ። \"ባለፉት ሁለት አመታት ቆሻሻ ውሃ እየተመገብን ነበር ይህም እንደ ተቅማጥ ያሉ ብዙ የውሃ ወለድ በሽታዎችን አስከትሏል።\" አጣዳፊነቱን በመገንዘብ REST ደህንነቱ የተጠበቀ እና ንጹህ ውሃ ማግኘትን ቅድሚያ ይሰጣል። በጥገና፣ በተሃድሶ እና በግንባታ ጥረቶች ላይ በንቃት የተሰማራው REST ችግሩን ለመፍታት ከማህበረሰቡ ጋር አጋርነት ይኖረዋል።"
+   },
+   "date": "April, 30, 2024",
+   "image": "commite-3.PNG-1720554605896-80708626.PNG"
+  },
+  {
+   "title": {
+    "en": "Aregawi Girmay's Path from Traditional to Sustainable Agriculture",
+    "ti": "መንገዲ ኣረጋዊ ግርማይ ካብ ባህላዊ ናብ ዘላቒ ሕርሻ",
+    "am": "የአረጋዊ ግርማይ መንገድ ከባህላዊ ወደ ዘላቂ ግብርና"
+   },
+   "body": {
+    "en": "Aregawi Girmay and his wife, Tsehaynesh Abadi, from Gedeba Tabia, Adwa Weredas, transformed their farming practices with the help of the “Folfolo” watershed project by REST/DF-CARDІІ. Through the project, Aregawi embraced Climate-Smart Agriculture (CSA) practices, receiving improved maize seed and training. Implementing innovative techniques, he expects to harvest over 10 quintals of maize.",
+    "ti": "ኣረጋዊ ግርማይን በዓልቲ ቤቱ ጸሃይነሽ ኣባዲን ካብ ገደባ ጣብያ ዓድዋ ወረዳስ ብ REST/DF-CARDІІ ዝተባህለ ፕሮጀክት “ፎልፎሎ” ዋተርሼድ ብምሕጋዝ ኣሰራርሓ ሕርሻኦም ቀይሮም። ኣረጋዊ በቲ ፕሮጀክት ኣቢሉ ኣሰራርሓታት ክሊማ-ስማርት ሕርሻ (CSA) ብምቕባል ዝተመሓየሸ ዘርኢ ቆሎን ስልጠናን ረኺቡ። ፈጠራዊ ሜላታት ብምትግባር ድማ ልዕሊ 10 ኩንታል ቆሎ ክእክብ ትፅቢት ኣለዎ።",
+    "am": "አረጋዊ ግርማይ እና ባለቤታቸው ወይዘሮ ፀሃይነሽ አባዲ ከገደባ ጣብያ ከአድዋ ወረዳዎች በ REST/DF-CARDІ በ\"ፎልፎሎ\" የተፋሰስ ፕሮጀክት በመታገዝ የግብርና ስራቸውን ቀይረዋል። በፕሮጀክቱ አማካኝነት አረጋዊ የአየር ንብረት-ዘመናዊ ግብርና (CSA) ልምዶችን ተቀብሏል, የተሻሻለ የበቆሎ ዘር እና ስልጠና ወሰደ. አዳዲስ ቴክኒኮችን በመተግበር ከ10 ኩንታል በላይ በቆሎ ለመሰብሰብ ይጠብቃል።"
+   },
+   "date": "April, 30, 2024",
+   "image": "aregawi girmay.PNG-1720553677645-42809989.PNG"
+  },
+  {
+   "title": {
+    "en": "Improving Public Health Outcomes: The Wurich Water Point",
+    "ti": "ምምሕያሽ ውጽኢት ህዝባዊ ጥዕና፡ ነጥቢ ማይ ዉሪች",
+    "am": "የህዝብ ጤና ውጤቶችን ማሻሻል፡ የዉሪች ውሃ ነጥብ"
+   },
+   "body": {
+    "en": "Water-borne diseases may affect us if we cannot promptly maintain and manage our water points. We are currently in danger, especially with reports of cholera emerging in several areas of Tigray. Therefore, having a clean water source is imperative for our survival,” emphasizes forty-year-old priest Selomon Kiros. REST’s timely intervention has been crucial in preserving Wurich, the water point in Werda Kola Tembien. Today, the community maintains the water point in close collaboration with the REST team.",
+    "ti": "ማይ ዝመሓላለፉ ሕማማት ክጸልዉና ይኽእሉ እዮም፡ ብቕልጡፍ ነጥብታት ማይና ክንሕልዎን ከነመሓድሮምን እንተዘይክኢልና። ኣብዚ ሕዚ እዋን ኣብ ሓደጋ ኢና ዘለና ብፍላይ ኣብ ሓያሎ ከባቢታት ትግራይ ብሕማም ኮሌራ ዝቕልቀሉ ጸብጻባት። ስለዚ ጽሩይ ምንጪ ማይ ምህላው ንህላወና ግድን እዩ” ይብል ወዲ ኣርብዓ ዓመት ካህን ሰሎሞን ኪሮስ። REST’s እዋናዊ ምትእትታው ኣብ ምዕቃብ ዉሪች፡ ነጥቢ ማይ ወርዳ ቆላ ተምቤን ወሳኒ ኮይኑ’ሎ። ሎሚ እቲ ሕብረተሰብ ምስ ጉጅለ REST ብቐረባ ብምትሕብባር ነቲ ናይ ማይ ነጥቢ ይሕሉ።",
+    "am": "የውሃ ነጥቦቻችንን በአፋጣኝ መንከባከብ እና ማስተዳደር ካልቻልን ውሃ ወለድ በሽታዎች ሊጎዱን ይችላሉ። በአሁኑ ወቅት በተለይ በትግራይ በርካታ አካባቢዎች የኮሌራ በሽታ መከሰቱን እየተዘገበ ነው። ስለዚህ ንጹሕ የውኃ ምንጭ ማግኘታችን ለሕይወታችን አስፈላጊ ነው” ሲሉ የአርባ ዓመቱ ካህን ሰሎሞን ኪሮስ አጽንዖት ሰጥተዋል። የ REST ወቅታዊ ጣልቃገብነት በወራዳ ኮላ ተምቤን የሚገኘውን የውሃ ነጥብ ዉሪች በመጠበቅ ረገድ ወሳኝ ነበር። ዛሬ ማህበረሰቡ ከ REST ቡድን ጋር በቅርበት በመተባበር የውሃ ነጥቡን ይጠብቃል።"
+   },
+   "date": "April, 30, 2024",
+   "image": "wiruch water point.PNG-1720554188808-108078393.PNG"
+  },
+  {
+   "title": {
+    "en": "Empowering Rural Women: Alem Teka's Story",
+    "ti": "ምሕያል ደቂ ኣንስትዮ ገጠር፡ ዛንታ ኣለም ተካ",
+    "am": "የገጠር ሴቶችን ማብቃት፡ የአለም ተካ ታሪክ"
+   },
+   "body": {
+    "en": "Alem Teka, a forty-year-old woman from Embasineyti Woreda, faced immense challenges accessing clean water for her family. Without formal education, she trekked long distances to fetch contaminated water from the Alendiya River, enduring danger and hardship. The Alendiya water point was swiftly constructed thanks to REST, providing Alem and her community with clean water. However, the water point broke down during the war, plunging them back into distress.",
+    "ti": "ኣለም ተካ ዝተባህለት ጓል ኣርብዓ ዓመት ጓል ኣንስተይቲ ካብ ወረዳ እምባሲነይቲ ንስድራቤታ ጽሩይ ማይ ኣብ ምርካብ ዘይተኣደነ ብድሆታት ኣጋጢምዋ። ወግዓዊ ትምህርቲ ብዘይምህላዋ፡ ሓደጋን ጸገምን ተጻዊራ፡ ካብ ሩባ ኣለንድያ ዝተበከለ ማይ ንምምጻእ ነዊሕ ርሕቀት ተጓዒዛ። ነጥቢ ማይ ኣለንድያ ሳላ REST ብቕልጡፍ ተሃኒጹ፡ ንኣለምን ማሕበረሰባን ጽሩይ ማይ ኣቕሪቡ። ይኹን እምበር፡ እቲ ነጥቢ ማይ ኣብ እዋን ኲናት ተበታቲኑ፡ ናብ ጭንቀት ተመሊሱ ኣጥሒልዎም።",
+    "am": "የኢምባሲነይቲ ወረዳ ነዋሪ የሆነችው አለም ተካ የተባለችው የአርባ አመት ሴት ለቤተሰቧ ንፁህ ውሃ ለማግኘት ብዙ ፈተና ገጥሟታል። ያለ መደበኛ ትምህርት ከአሌንዲያ ወንዝ የተበከለ ውሃ ለመቅዳት ረጅም ርቀት ተጉዛ አደጋን እና ችግርን ተቋቁማለች። የአሌንዲያ የውሃ ነጥብ በፍጥነት ተገንብቷል ለአለም እና ማህበረሰቧ ንፁህ ውሃ በማቅረብ ለ REST ምስጋና ይግባው ። ይሁን እንጂ በጦርነቱ ወቅት የውኃው ነጥብ በመበላሸቱ እንደገና ወደ ጭንቀት ወሰዳቸው።"
+   },
+   "date": "April, 25, 2024",
+   "image": "women-news.PNG-1720555396043-818455343.PNG"
+  },
+  {
+   "title": {
+    "en": "Thirst Under the Tigray Sun: A Story of Resilience and Relief",
+    "ti": "ጽምኢ ኣብ ትሕቲ ጸሓይ ትግራይ፡ ዛንታ ጽንዓትን ረድኤትን",
+    "am": "ጥማት በትግራይ ፀሀይ ስር፡ የጽናትና እፎይታ ታሪክ"
+   },
+   "body": {
+    "en": "Imagine this: a relentless sun beating down on parched earth. Thirteen-year-old Hertig Birhane, a cowboy at heart, grazes his family’s crops near the Alendiya Water Point in Emba Sineyti Woreda, Mereto Tabia. Alendiya, located within Tabia May Nebri, is a place where the cost of water can sometimes surpass the cost of a meal.",
+    "ti": "ነዚ እሞ ሕስብ ኣብሎ: ዘይሕለል ጸሓይ ኣብ ልዕሊ ዝነቐጸ መሬት ትሃርም። ወዲ 13 ዓመት ሄርቲግ ብርሃነ ብልቡ ቆልዓ ላም ኣብ ወረዳ እምባ ሲነይቲ መሬቶ ታብያ ኣብ ጥቓ ማይ ኣለንድያ ዝራእቲ ስድርኡ ይጓስዩ። ኣብ ውሽጢ ታብያ ማይ ነብሪ እትርከብ ኣለንድያ፡ ሓደ ሓደ ግዜ ዋጋ ማይ ካብ ዋጋ መግቢ ንላዕሊ ክበዝሕ ዝኽእል ቦታ እዩ።",
+    "am": "በደረቅ ምድር ላይ ያለማቋረጥ ጸሃይ ስትመታ ይህን አስብ። የ13 አመቱ ሄርቲግ ብርሃኔ የተባለ ላም ቦይ በኤምባ ሲነይቲ ወረዳ ሜሬቶ ታቢያ በሚገኘው አለንዲያ የውሃ ነጥብ አጠገብ የቤተሰቡን ሰብል ያሰማራል። አሌንዲያ፣ በታቢያ ሜይ ነብሪ ውስጥ የምትገኘው፣ የውሃ ዋጋ አንዳንዴ ከምግብ ወጪ የሚበልጥበት ቦታ ነው።"
+   },
+   "date": "April, 23, 2024",
+   "image": "resilence-knowledge.PNG-1720555000253-579565144.PNG"
+  },
+  {
+   "title": {
+    "en": "Vermicomposting in Laelay Legomti",
+    "ti": "ቨርሚኮምፖስቲንግ ኣብ ላኤላይ ለጎምቲ",
+    "am": "ቨርሚኮምፖስቲንግ ኣብ ላኤላይ ለጎምቲ"
+   },
+   "body": {
+    "en": "Tesfamariam Welu, a pillar of his six-person household in Laelay Legomti village, exemplifies the transformative power of vermicomposting (worm composting) in enriching lives and cultivating a more sustainable future. By embracing this innovative technique, Tesfamariam has not only nurtured a thriving vegetable garden and productive crop fields but also empowered his community and become a beacon of agricultural resilience.",
+    "ti": "ኣብ ቁሸት ላኤላይ ለጎምቲ ዝርከብ ሽዱሽተ ሰባት ዝሓቖፈ ቤቱ ዓንዲ ዝኾነ ተስፋማርያም ወሉ፡ ቨርሚኮምፖስቲንግ (መትሎ ኮምፖስቲንግ) ኣብ ምህብታም ህይወትን ዝያዳ ዘላቒ መጻኢ ኣብ ምኹስኳስን ዘለዎ ለውጢ ዘምጽእ ሓይሊ ኣብነት እዩ። ተስፋማርያም ነዚ ፈጠራዊ ሜላ ብምሕቋፍ፡ ምዕቡል ጀርዲን ኣሕምልትን ኣፍራዪ ግራት ዘራእትን ሓብሒቡ ጥራሕ ዘይኮነስ ሕብረተሰቡ ሓይሉ መብራህቲ ጽንዓት ሕርሻ ኮይኑ ኣሎ።",
+    "am": "በላዕላይ ለጎምቲ መንደር ባለ ስድስት ሰው ቤተሰቡ ምሰሶ የሆነው ተስፋማርያም ወለ የቫርሚ ኮምፖስት (ትል ማዳበሪያ) ህይወትን በማበልጸግ እና ቀጣይነት ያለው የወደፊት ህይወትን በማልማት ረገድ ያለውን የለውጥ ሃይል ያሳያል። ተስፋማርያም ይህንን የፈጠራ ቴክኒክ በመቀበል የበለፀገ የአትክልትና የበለፀገ የሰብል ማሳን ከመንከባከብ ባለፈ ማህበረሰቡን በማብቃት የግብርና ተቋቋሚነት ማሳያ መሆን ችሏል።"
+   },
+   "date": "April, 17, 2024",
+   "image": "laelay legomti.PNG-1720554815362-301588328.PNG"
+  },
+  {
+   "title": {
+    "en": "Empowering Dreams: Providing Access to Clean Water",
+    "ti": "ምሕያል ሕልሚ፡ ጽሩይ ማይ ምርካብ",
+    "am": "ህልሞችን ማጎልበት፡ የንፁህ ውሃ አቅርቦትን መስጠት"
+   },
+   "body": {
+    "en": "“After 5 months of failure, I am overjoyed that the water point is functional again. I want to become a teacher to guide and shape my community’s future. Having a nearby water source is beneficial so that I may spend more time studying. Thank you for assisting us, REST.” A 14-year-old fifth-grade girl walks a ten-minute round trip daily to fetch clean and safe water. “We use 4-6 jerry cans daily for cooking and cleaning,” she says. Birhan Berhe, a Samre Wereda, Amdi Weyane sub-district resident, shares her experience: “When this water source was damaged, I had to walk 80 minutes round trip. The other source was unsecured and open.” “After 5 months of failure, I am overjoyed that the water point is functional again. I want to become a teacher to guide and shape my community’s future. Having a nearby water source is beneficial so that I may spend more time studying. Thank you for assisting us, REST.” At REST, we are committed to empowering dreams and ensuring access to clean water, enabling individuals like Birhan to pursue their aspirations and contribute to their community’s future.",
+    "ti": "“ድሕሪ ናይ 5 ኣዋርሕ ውድቀት፡ እቲ ናይ ማይ ነጥቢ መሊሱ ተግባራዊ ምዃኑ ኣዝዩ የሐጉሰኒ። መጻኢ ሕብረተሰበይ ዝመርሕን ዝቐርጽን መምህር ክኸውን’የ ዝደሊ። ኣብ ጥቓይ ምንጪ ማይ ምህላወይ ዝያዳ ግዜ ኣብ መጽናዕቲ ምእንቲ ኸሕልፍ ጠቓሚ እዩ። ስለ ዝሓገዝካና የቐንየልና፡ ዕረፍቲ።” ሓንቲ ጓል 14 ዓመት ጓል ሓሙሻይ ክፍሊ፡ ጽሩይን ውሑስን ማይ ንምምጻእ መዓልታዊ ንዓሰርተ ደቓይቕ ዝኸውን ምምላስን ምምላስን ትኸይድ። \"ንመብሰሊን ንጽሬትን መዓልታዊ ካብ 4-6 ጀሪካን ንጥቀም\" ትብል። ነባሪት ጣብያ ዓምዲ ወያነ ሳምረ ወረዳ ዝኾነት ብርሃን በርሀ፡ “እዚ ምንጪ ማይ ምስ ተበላሸወ፡ 80 ደቓይቕ ብእግረይ ክኸይድ ነይሩኒ ክምለስ ተገዲደ። እቲ ካልእ ምንጪ ውሕስነት ዘይብሉን ክፉትን እዩ ነይሩ።” “ድሕሪ ናይ 5 ኣዋርሕ ውድቀት፡ እቲ ናይ ማይ ነጥቢ መሊሱ ተግባራዊ ምዃኑ ኣዝዩ የሐጉሰኒ። መጻኢ ሕብረተሰበይ ዝመርሕን ዝቐርጽን መምህር ክኸውን’የ ዝደሊ። ኣብ ጥቓይ ምንጪ ማይ ምህላወይ ዝያዳ ግዜ ኣብ መጽናዕቲ ምእንቲ ኸሕልፍ ጠቓሚ እዩ። ስለ ዝሓገዝካና የቐንየልና፡ ዕረፍቲ።” ኣብ REST ሕልምታት ንምሕያልን ተበፃሕነት ፅሩይ ማይ ንምርግጋፅን፣ ከም በዓል ብርሃን ዝኣመሰሉ ውልቀሰባት ባህግታቶም ክስዕቡን ኣብ መፃኢ ሕብረተሰቦም ኣበርክቶ ክገብሩን ንኽእል ኢና።",
+    "am": "\"ከ5 ወራት ውድቀት በኋላ፣ የውሃ ነጥቡ እንደገና መስራቱ በጣም ደስተኛ ነኝ። የማህበረሰቤን የወደፊት እጣ ፈንታ ለመምራት እና ለመቅረጽ አስተማሪ መሆን እፈልጋለሁ። በማጥናት ብዙ ጊዜ እንዳጠፋ በአቅራቢያው የሚገኝ የውሃ ምንጭ መኖሩ ጠቃሚ ነው። ስለረዱን እናመሰግናለን፣ REST።” የ14 ዓመቷ የአምስተኛ ክፍል ልጅ ንፁህ እና ንጹህ ውሃ ለመቅዳት በየቀኑ የአስር ደቂቃ የክብ ጉዞ ትጓዛለች። \"ለማብሰያ እና ጽዳት በየቀኑ ከ4-6 ጀሪካን እንጠቀማለን\" ትላለች። ብርሃን በርሄ የሰመረ ወረዳ አምዲ ወያነ ክ/ከተማ ነዋሪ ልምዷን እንዲህ ስትል ልምዷን ገልጻለች፡- “ይህ የውሃ ምንጭ ሲበላሽ የ80 ደቂቃ የእግር ጉዞ ማድረግ ነበረብኝ። ሌላኛው ምንጭ ደህንነቱ ያልተጠበቀ እና ክፍት ነበር.\" \"ከ5 ወራት ውድቀት በኋላ፣ የውሃ ነጥቡ እንደገና መስራቱ በጣም ደስተኛ ነኝ። የማህበረሰቤን የወደፊት እጣ ፈንታ ለመምራት እና ለመቅረጽ አስተማሪ መሆን እፈልጋለሁ። በማጥናት ብዙ ጊዜ እንዳጠፋ በአቅራቢያው የሚገኝ የውሃ ምንጭ መኖሩ ጠቃሚ ነው። ስለረዱን እናመሰግናለን፣ REST።” በ REST እንደ ብርሃን ያሉ ግለሰቦች ምኞቶቻቸውን እንዲያሳድጉ እና ለወደፊት ማህበረሰባቸው የወደፊት አስተዋፅኦ እንዲያበረክቱ ህልሞችን ለማጎልበት እና ንጹህ ውሃ ለማግኘት ቆርጠን ተነስተናል።"
+   },
+   "date": "March, 14, 2024",
+   "image": "birhane-berhe.PNG-1720557210988-789522735.PNG"
+  },
+  {
+   "title": {
+    "en": "WASH Emergency Scheme Maintenance",
+    "ti": "WASH Emergency ስኬም ጽገና",
+    "am": "የእቃ ማጠቢያ ድንገተኛ አደጋ የመርሃግብር ጥገና"
+   },
+   "body": {
+    "en": "Kiros Girmay, a mother of seven from Tigray, relied on a well for clean water until conflict damaged it twice in four months. With the help of REST’s PIMS crew, the community swiftly repaired the well, bringing relief after months of hardship. “We suffered for months without clean water,” says Kiros. “But now, thanks to the support, our well is maintained again.” Despite challenges, REST ensures clean water access, fostering resilience in Tigray’s communities.",
+    "ti": "ካብ ትግራይ ዝመጸት ኣደ 7 ቆልዑ ዝኾነት ኪሮስ ግርማይ፡ ኣብ ውሽጢ ኣርባዕተ ኣዋርሕ ግጭት ክልተ ግዜ ክሳብ ዝሃስዮ ንጽሩይ ማይ ኣብ ዒላ ተጸጊዓ። እቲ ሕብረተሰብ ብሓገዝ ሰራሕተኛታት REST’s PIMS ነቲ ዒላ ብቕልጡፍ ብምጽጋን ድሕሪ ናይ ኣዋርሕ ጸገም ዕረፍቲ ኣምጺኡ። ኪሮስ፡ “ጽሩይ ማይ ከይሰኣና ንኣዋርሕ ተሳቐና” ይብል። \"ሕጂ ግን ሳላ እቲ ደገፍ፡ ዒላና መሊሱ ይዕቀብ ኣሎ።\" ዋላ’ኳ ብድሆታት እንተሃለወ፡ REST ተበፃሕነት ፅሩይ ማይ የረጋግፅ፣ ኣብ ማሕበረሰባት ትግራይ ፅንዓት የዕቢ።",
+    "am": "የሰባት ልጆች እናት የሆነችው ኪሮስ ግርማይ በአራት ወራት ውስጥ ሁለት ጊዜ ግጭት እስኪያበላሽ ድረስ ንፁህ ውሃ ለማግኘት በጉድጓድ ላይ ትማማለች። በREST's PIMS ሰራተኞች እርዳታ ማህበረሰቡ ጉድጓዱን በፍጥነት ጠግኖታል፣ ከወራት ችግር በኋላ እፎይታ አመጣ። “ንጹሕ ውሃ አጥተን ለወራት ተሠቃየን” ሲል ኪሮስ ተናግሯል። አሁን ግን ለድጋፉ ምስጋና ይግባውና ጉድጓዱ እንደገና ተጠብቆ ቆይቷል። ምንም እንኳን ፈተናዎች ቢኖሩም፣ REST የንፁህ ውሃ አቅርቦትን ያረጋግጣል፣ በትግራይ ማህበረሰቦች ውስጥ የመቋቋም አቅምን ያሳድጋል።"
+   },
+   "date": "March, 14, 2024",
+   "image": "kiros-girmay.PNG-1720557023397-617141693.PNG"
+  }
+ ],
+ "team": [
+  {
+   "name": "Mr. Desta Gebremichael",
+   "role": "Natural Resources and Agricultural Development (NRAD)",
+   "image": "desta.jpg-1763463096053-907200681.jpg"
+  },
+  {
+   "name": "Mr. Yemane Belay",
+   "role": "REST Liaison Office Programs Coordinator",
+   "image": "yemane.jpg-1763457562642-98753492.jpg"
+  },
+  {
+   "name": "Mr. Dawit Woldelibanos Adera",
+   "role": "Director, Planning and Coordination Department",
+   "image": "1000088607.jpg-1776426012935-719454877.jpg"
+  },
+  {
+   "name": "Mr. Getachew Kalayu",
+   "role": "Deputy Executive Director (Head Of Programmes & Operations)",
+   "image": "getachew.jpg-1763462930532-86206411.jpg"
+  },
+  {
+   "name": "Mr. Hishe Lemma",
+   "role": "Deputy Executive Director & Service Head",
+   "image": "hishe.jpg-1721375787928-992090668.jpg"
+  },
+  {
+   "name": "Mr. Teklewoini Assefa",
+   "role": "Executive Director",
+   "image": "tekle.jpg-1763457956347-863353327.jpg"
+  }
+ ],
+ "partners": [
+  {
+   "name": "Rissho Kosei Kai (RKK) - Donate-a-Meal Fund for Peace",
+   "logo": "Rissho.png-1763485051913-433344742.png"
+  },
+  {
+   "name": "my book buddy",
+   "logo": "my book buddy.png-1763484696353-701717419.png"
+  },
+  {
+   "name": "Glimmers of hope",
+   "logo": "glimmer.jpg-1763557906447-318195640.jpg"
+  },
+  {
+   "name": "PSNP",
+   "logo": "PSNP.png-1763485015346-322329319.png"
+  },
+  {
+   "name": "WFP",
+   "logo": "WFP.png-1763485405909-493521780.png"
+  },
+  {
+   "name": "Tigray Region Education Bureau",
+   "logo": "education.jpeg-1720559497774-213939102.jpeg"
+  },
+  {
+   "name": "water charity",
+   "logo": "water charity.png-1763485308496-12143698.png"
+  },
+  {
+   "name": "Tigray Charity Care",
+   "logo": "charity.jpeg-1720560856424-29616951.jpeg"
+  },
+  {
+   "name": "Dedebit Microfinance",
+   "logo": "DECSI.png-1763558505640-416383936.png"
+  },
+  {
+   "name": "L10K",
+   "logo": "L10k.png-1763484655468-357734623.png"
+  },
+  {
+   "name": "Maeger Tigray Women's Association in N.A",
+   "logo": "women.jpeg-1720560514502-73968005.jpeg"
+  },
+  {
+   "name": "Care",
+   "logo": "care.png-1763484217944-891109404.png"
+  },
+  {
+   "name": "UNICEF",
+   "logo": "UNICEF-Logo1.png-1763557935231-994734361.png"
+  },
+  {
+   "name": "oxfam",
+   "logo": "oxfam.png-1763484884054-913151045.png"
+  },
+  {
+   "name": "Bread for the world",
+   "logo": "Bread.svg-1763558117737-24467070.svg"
+  },
+  {
+   "name": "water to thrive",
+   "logo": "water to thrive.png-1763485334665-419376132.png"
+  },
+  {
+   "name": "trociare",
+   "logo": "trociare.png-1763485148123-524801922.png"
+  },
+  {
+   "name": "IQ-Business-Group",
+   "logo": "IQ logo.png-1763468692788-659198897.png"
+  },
+  {
+   "name": "well wishers australia",
+   "logo": "well wishers australia.png-1763485363714-832229941.png"
+  },
+  {
+   "name": "Catholic Association",
+   "logo": "catholic association.png-1763484253182-73210354.png"
+  },
+  {
+   "name": "Catholic",
+   "logo": "catholic.png-1763484295697-300645796.png"
+  },
+  {
+   "name": "Kinder Suerer",
+   "logo": "kinder suerer.png-1763484615714-696105649.png"
+  },
+  {
+   "name": "Tigray Biotechnology Center",
+   "logo": "tbc-.jpg-1763558340196-343642436.jpg"
+  },
+  {
+   "name": "FAO",
+   "logo": "FAO.png-1763484439433-307566232.png"
+  },
+  {
+   "name": "European Union",
+   "logo": "EU.webp-1763558442435-625767820.webp"
+  },
+  {
+   "name": "Tigray Health Bureau",
+   "logo": "health.jpeg-1720559823924-234326179.jpeg"
+  },
+  {
+   "name": "Development Fund",
+   "logo": "development fund.png-1763484325282-787379455.png"
+  },
+  {
+   "name": "ATI",
+   "logo": "1775660974985.jpg-1775663918524-853031889.jpg"
+  },
+  {
+   "name": "Neven",
+   "logo": "neven 2.png-1763484731970-860915089.png"
+  }
+ ],
+ "policy": [
+  {
+   "title": {
+    "en": "Alignment with National and Regional Priorities",
+    "ti": "ምስ ሃገራውን ዞባውን ፖሊሲታት ምትእስሳር",
+    "am": "ከብሔራዊ እና ክልላዊ ፖሊሲዎች ጋር መጣጣም"
+   },
+   "body": {
+    "en": "REST aligns its programs with Ethiopia’s and Tigray’s key development frameworks, ensuring complementarity and sustainability. These include: The National Growth and Transformation Plan (GTP II) The Tigray Regional Five-Year Strategic Plan The National and Regional Policies on Disaster Risk Management and Climate Change The National Productive Safety Net Programme (PSNP) The National Nutrition Strategy and Programme Through this alignment, REST ensures that its interventions contribute to broader government objectives while addressing the unique humanitarian and development needs of the Tigray region.",
+    "ti": "REST ዝተባህለ ናይ ልምዓት ትካል ኣብ ውሽጢ ዝተፈላለዩ ፖሊሲታት ዝሰርሕ ኮይኑ፡ ንኣብነት፤ ሃገራዊ ትልሚ ዕብየትን ትራንስፎርሜሽንን II ክልል ትግራይ ናይ 5 ዓመት ስትራተጂካዊ ትልሚ ሃገራውን ዞባውን ፖሊሲታት ምሕደራ ሓደጋ ሓደጋን ለውጢ ክሊማን ሃገራዊ መደብ ኣፍራዪ ድሕነት መርበብ ሃገራዊ መደብን ስትራተጂን ኣመጋግባ",
+    "am": "REST፣ የልማት ድርጅት፣ የሚከተሉትን ጨምሮ በተለያዩ ፖሊሲዎች ማዕቀፍ ውስጥ ይሰራል፡- ሀገራዊ የእድገትና ትራንስፎርሜሽን እቅድ II የትግራይ ክልል የ5 ዓመት ስትራቴጂክ እቅድ በአደጋ ስጋት አስተዳደር እና በአየር ንብረት ለውጥ ላይ ብሔራዊ እና ክልላዊ ፖሊሲዎች ብሔራዊ የምርት ሴፍቲኔት ፕሮግራም ብሔራዊ የአመጋገብ ፕሮግራም እና ስትራቴጂ"
+   },
+   "image": "policy-3.jpg-1720589026286-652426308.jpg"
+  },
+  {
+   "title": {
+    "en": "Policy Context And Operational Landscape",
+    "ti": "ፖሊሲ ዓውደ-ጽሑፍን ስርሒታዊ ብድሆታትን",
+    "am": "የፖሊሲ አውድ እና የአሠራር ተግዳሮቶች"
+   },
+   "body": {
+    "en": "Ethiopia’s national development vision aims to achieve lower-middle-income status by 2025 through inclusive and sustainable growth. REST contributes to these goals by implementing community-based recovery and resilience programs that reflect national priorities such as: Sustaining economic growth and reducing poverty Enhancing agricultural productivity and food security Promoting industrialization and value chain development Empowering the private sector and cooperatives Expanding infrastructure and energy access Investing in education, health, and technology Strengthening democratic and developmental governance",
+    "ti": "ዕላማታት ሃገራዊ ልምዓት ኢትዮጵያ ክሳብ 2025 ትሑት ማእከላይ እቶት ዘለዋ ሃገር ክትከውን ዕላማ ኣለዋ።ነዚ ንምዕዋት ትልሚ መንግስቲ (GTP II) ኣብ፤ ልዑል ቁጠባዊ ዕብየት ምዕቃብ (ዓመታዊ ከባቢ 11%) ቅልጡፍ ኢንዱስትርያዊ ምዕባለ ሰፊሕ መሰረት ዘለዎ ልምዓት",
+    "am": "የሀገር ልማት ግቦች ኢትዮጵያ በ2025 መካከለኛ ገቢ ካላቸው አገሮች ተርታ ለመሰለፍ ትሞክራለች።ይህን ለማሳካት የመንግሥት ዕቅድ (ጂቲፒ II) በሚከተሉት ላይ ያተኩራል። ከፍተኛ የኢኮኖሚ እድገትን መጠበቅ (በዓመት 11 በመቶ ገደማ) ፈጣን ኢንዱስትሪያላይዜሽን ሰፊ-ተኮር ልማት"
+   },
+   "image": "policy-1.jpg-1720588797614-673433709.jpg"
+  },
+  {
+   "title": {
+    "en": "REST’s Strategic Focus Areas",
+    "ti": "ቁልፊ ስትራተጂታት",
+    "am": "ቁልፍ ስልቶች"
+   },
+   "body": {
+    "en": "REST’s organizational strategy integrates humanitarian response, recovery, and long-term development under a unified resilience framework. Its key strategic pillars include: Resilient Livelihoods : Supporting households and communities to recover, adapt, and thrive through climate-smart agriculture, livestock development, and sustainable natural resource management. Human Capital and Social Development : Strengthening health systems, education, youth and women’s empowerment, and protection services to improve community well-being. Climate Adaptation and Environmental Recovery : Rehabilitating degraded ecosystems, promoting water and soil conservation, and advancing sustainable land management. Humanitarian Response and Preparedness : Delivering rapid, coordinated emergency relief, while laying the foundation for early recovery and long-term resilience. Partnership and Advocacy : Working collaboratively with government, donors, and communities to ensure accountability, influence policy, and amplify the voices of affected populations.",
+    "ti": "ቁጠባዊ ዕብየት፦ ዘላቒ ቁጠባዊ ዕብየትን ምንካይ ድኽነትን። ኣፍራይነት፦ ኣብ ሕርሻን ማኑፋክቸሪንግን ኣፍራይነት ምውሳኽ። ውልቃዊ ጽላት፡- ንናይ ውሽጢ ሃገር ውልቃዊ ጽላት ምሕያል። ትሕተ ቅርጺ፡- ብፍላይ ኣብ ጸዓትን መጓዓዝያን ንዘሎ ክፍተት መሰረተ ልምዓት ምፍታሕ። ከተማነት፦ ዕብየት ንምድንፋዕ ቅልጡፍ ከተማነት ምምሕዳር። ሰብኣዊ ምዕባለ፡ ኣብ ትምህርቲ፡ ጥዕናን ቴክኖሎጅን ወፍሪ ምግባር። ምሕደራ፡- ምጥንኻር ዲሞክራስያውን ልምዓታውን ምሕደራ።",
+    "am": "የኢኮኖሚ እድገት፡ የኢኮኖሚ እድገትን ማስቀጠልና ድህነትን መቀነስ። ምርታማነት፡ በግብርና እና በማኑፋክቸሪንግ ምርታማነትን ማሳደግ። የግል ዘርፍ፡- የሀገር ውስጥ የግሉ ዘርፍን ማብቃት። መሠረተ ልማት፡- የመሠረተ ልማት ክፍተቶችን በተለይም በሃይል እና በትራንስፖርት ላይ መፍታት። የከተሞች መስፋፋት፡ ፈጣን የከተሞች እድገትን ማስተዳደር። የሰው ልማት፡ በትምህርት፣ በጤና እና በቴክኖሎጂ ላይ ኢንቨስት ማድረግ። አስተዳደር፡ ዴሞክራሲያዊና ልማታዊ አስተዳደርን ማጠናከር።"
+   },
+   "image": "policy-2.jpg-1720588881248-529064242.jpg"
+  }
+ ],
+ "beneficiaries": [
+  {
+   "title": {
+    "en": "At REST: Championing Equity and Resilience in Conflict Zones",
+    "ti": "ኣብ REST: ኣብ ዞባታት ግጭት ንፍትሓውነትን ጽንዓትን ምጉስጓስ",
+    "am": "በ REST፡ በግጭት ዞኖች ውስጥ ፍትሃዊነትን እና መቻልን ማሸነፍ"
+   },
+   "body": {
+    "en": "REST operates on a fundamental principle: ensuring that support reaches all conflict-affected communities within the bounds of our capacity and resources. We are acutely aware of the heightened vulnerabilities faced by specific groups within these communities. Internally Displaced People (IDPs) and survivors of gender-based violence are at the forefront of our efforts, receiving prioritized assistance to help them navigate the immense challenges they face. Our commitment extends beyond simply providing aid. We recognize the unique needs of each population segment. This translates into a meticulously tailored approach, with activities and programs designed to empower and uplift specific vulnerable groups. These include:",
+    "ti": "REST ብመሰረታዊ መትከል እዩ ዝሰርሕ: ደገፍ ኣብ ውሽጢ ደረት ዓቕምናን ጸጋታትናን ናብ ኩሎም ብግጭት ዝተሃስዩ ማሕበረሰባት ከምዝበጽሕ ምርግጋጽ። ኣብ ውሽጢ እዞም ማሕበረሰባት ንዝርከቡ ፍሉያት ጉጅለታት ዘጋጥሞም ዝለዓለ ተቓላዕነት ኣጸቢቕና ንፈልጦ ኢና። ኣብ ውሽጢ ሃገር ዝተመዛበሉን ካብ ጾታ መሰረት ዝገበረ ዓመጽ ዝደሓኑን ኣብ ቅድሚት ጻዕርታትና ኮይኖም፡ ነቲ ዘጋጥሞም ዘይተኣደነ ብድሆታት ንምጉዓዝ ዝሕግዝ ቀዳምነት ዝወሃቦ ሓገዝ ይረኽቡ። ተወፋይነትና ኪኖ ሓገዝ ምሃብ ጥራይ ዝሓልፍ እዩ። ናይ ነፍሲ ወከፍ ክፋል ህዝቢ ፍሉይ ድሌታት ንፈልጥ ኢና። እዚ ድማ ናብ ብጥንቃቐ ዝተዳለወ ኣገባብ ይትርጎም፣ ንፍሉያት ተቓላዕቲ ጉጅለታት ንምሕያልን ንምልዓልን ዝተዳለዉ ንጥፈታትን መደባትን ኣለዎ። ካብዚኦም፤",
+    "am": "REST የሚንቀሳቀሰው በመሠረታዊ መርሆ ነው፡ ድጋፉ በግጭት ለተጎዱ ማህበረሰቦች በአቅማችን እና በሀብታችን ወሰን ውስጥ መድረሱን ማረጋገጥ። በእነዚህ ማህበረሰቦች ውስጥ ያሉ የተወሰኑ ቡድኖች የሚያጋጥሟቸውን ከፍተኛ ተጋላጭነቶች ጠንቅቀን እናውቃለን። የተፈናቀሉ ሰዎች (IDPs) እና ጾታን መሰረት ያደረጉ ጥቃቶች የተረፉ ሰዎች የሚያጋጥሟቸውን ግዙፍ ፈተናዎች ለመወጣት እንዲረዳቸው ቅድሚያ የሚሰጠው እርዳታ በምናደርገው ጥረት ግንባር ቀደም ናቸው። ቁርጠኝነታችን እርዳታ ከመስጠት ያለፈ ነው። የእያንዳንዱን የህዝብ ክፍል ልዩ ፍላጎቶች እናውቃለን። ይህ የተወሰኑ ተጋላጭ ቡድኖችን ለማበረታታት እና ለማንሳት በተነደፉ ተግባራት እና ፕሮግራሞች አማካኝነት በጥንቃቄ ወደተዘጋጀ አቀራረብ ይቀየራል። እነዚህም የሚከተሉትን ያካትታሉ:"
+   },
+   "image": "benefit.jpg-1720588259958-634231259.jpg"
+  },
+  {
+   "title": {
+    "en": "Internally Displaced People (IDPs):",
+    "ti": "ኣብ ውሽጢ ሃገር ተመዛበልቲ (IDPs)፤",
+    "am": "የተፈናቀሉ ሰዎች (ተፈናቃዮች)፡-"
+   },
+   "body": {
+    "en": "Sudden displacement creates a myriad of hardships. REST intervenes by providing essential resources, emergency assistance, and long-term support that aids in rebuilding livelihoods and restoring a sense of normalcy.",
+    "ti": "ሃንደበታዊ ምዝንባል ዕጽፍታት ዘይብሉ ጸገማት ይፈጥር። REST ኣገደስቲ ጸጋታት፡ ህጹጽ ሓገዝን ናይ ነዊሕ ግዜ ደገፍን ብምሃብ ጣልቃ ይኣቱ፡ እዚ ድማ ንመነባብሮ ዳግማይ ንምህናጽን ንቡር ስምዒት ንምምላስን ዝሕግዝ እዩ።",
+    "am": "ድንገተኛ መፈናቀል እጅግ በጣም ብዙ ችግሮችን ይፈጥራል። REST አስፈላጊ ግብዓቶችን፣ የአደጋ ጊዜ ዕርዳታን እና የረጅም ጊዜ ድጋፍን በመስጠት ኑሮን መልሶ ለመገንባት እና የመደበኛነት ስሜትን ወደነበረበት ይመልሳል።"
+   },
+   "image": "574327385_122180296508800003_4855315302245338318_n.jpg-1763621333731-596319013.jpg"
+  },
+  {
+   "title": {
+    "en": "Survivors of Gender-Based Violence:",
+    "ti": "ካብ ጾታ መሰረት ዝገበረ ዓመጽ ዝደሓኑ፤",
+    "am": "በፆታ ላይ የተመሰረተ ጥቃት የተረፉ ሰዎች፡-"
+   },
+   "body": {
+    "en": "The trauma inflicted by gender-based violence requires specialized care and support. REST offers a safe and confidential space for survivors to access medical and psychological services, legal aid, and skills development programs that empower them to rebuild their lives with dignity.",
+    "ti": "ጾታ መሰረት ዝገበረ ዓመጽ ዘስዕቦ ስንባደ ፍሉይ ክንክንን ደገፍን የድልዮ። REST ንዝደሓኑ ሰባት ሕክምናውን ስነ-ኣእምሮኣውን ኣገልግሎታት፡ ሕጋዊ ሓገዝን ህይወቶም ብኽብሪ ዳግማይ ንምህናጽ ዝሕግዝ መደባት ምዕባለ ክእለትን ንኽረኽቡ ውሑስን ምስጢራውን ቦታ ይህብ።",
+    "am": "ጾታን መሰረት ባደረገ ጥቃት የሚደርሰው ጉዳት ልዩ እንክብካቤ እና ድጋፍ ያስፈልገዋል። REST ህይወታቸውን በክብር እንደገና እንዲገነቡ የሚያስችላቸውን የህክምና እና የስነ-ልቦና አገልግሎቶችን፣ የህግ እርዳታን እና የክህሎት ማጎልበቻ ፕሮግራሞችን ለማግኘት አስተማማኝ እና ሚስጥራዊ ቦታን ይሰጣል።"
+   },
+   "image": "486177484_1080899907399796_4387388804991528924_n.jpg-1763621445788-429752219.jpg"
+  }
+ ],
+ "contact": {
+  "address": "Godena Guna, P.O. Box 20, Mekelle, Tigray, Ethiopia",
+  "mail": "resthq@resttigray.org",
+  "contactNumber": "+251-344-40-6300",
+  "openHours": "Monday – Friday · 8:00–17:30 EAT",
+  "mail2": "restaddis@resttigray.org"
+ },
+ "socials": [
+  {
+   "name": "Facebook",
+   "url": "https://web.facebook.com/RESTigray1978"
+  },
+  {
+   "name": "LinkedIn",
+   "url": "https://www.linkedin.com/company/relieftigray"
+  },
+  {
+   "name": "X",
+   "url": "https://x.com/ReliefTigray"
+  },
+  {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reliefsocietyoftigray?igsh=MWdhcHM4dzFiaW9pNQ=="
+  }
+ ],
+ "imageBase": "https://rest-api.resthorn.org/api/v1/images/"
+}
