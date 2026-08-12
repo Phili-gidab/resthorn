@@ -22,10 +22,10 @@ export default function Home({ lng, base }: { lng: Locale; base: string }) {
   const { t } = useTranslation()
   const featured = featuredStoryIndexes.slice(0, 3).map((i) => ({ ...content.stories[i], idx: i }))
   const services = content.services
-  /* pinned rail is a desktop scene; sampled once, like the hero's cinema mode */
+  /* the pinned rail runs at every width — the vertical list is the
+     reduced-motion reading, nothing else */
   const [railMode] = useState(() =>
     typeof window !== 'undefined' &&
-    window.innerWidth >= 880 &&
     !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   )
 

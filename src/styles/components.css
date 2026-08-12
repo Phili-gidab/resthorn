@@ -84,7 +84,31 @@
 .hero.static .hero-geez { display: block; }
 .hero.static .hero-ticker { transform: none; }
 
-/* ---- phones: fewer elements, more air, the film doing the work ----
+/* ---- phones, cinema mode: same scene, tighter geometry ----
+   The reveal is identical to desktop — curtain, line-by-line setting,
+   the window swallowing the viewport. Only the measurements change. */
+@media (max-width: 879px) {
+  .hero.cinema .hero-head { padding-top: calc(64px + clamp(10px, 3.5vh, 28px)); }
+  .hero.cinema .hh-kicker { font-size: 0.64rem; letter-spacing: 0.18em; line-height: 1.5; margin-bottom: clamp(12px, 2.2vh, 20px); }
+  .hero.cinema .hh-kicker .kk-sep { display: none; }
+  .hero.cinema .hh-kicker .geez { display: block; font-size: 0.92rem; letter-spacing: 0.02em; margin-bottom: 3px; }
+  .hero.cinema .hh-kicker .kk-en { display: block; }
+  .hero.cinema h1 { font-size: clamp(2.4rem, 10.6vw, 3.6rem); line-height: 1.01; letter-spacing: -0.02em; }
+  .hero.cinema h1:lang(ti), .hero.cinema h1:lang(am) { font-size: clamp(1.7rem, 7.6vw, 2.8rem); line-height: 1.28; }
+  .hero.cinema .hero-meta { margin-top: clamp(10px, 1.8vh, 18px); }
+  .hero.cinema .hm-sub {
+    font-size: 0.86rem; line-height: 1.55; max-width: 44ch;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+  }
+  .hero.cinema .hm-scroll { display: none; }
+  .hero.cinema .hero-over { bottom: clamp(64px, 10vh, 100px); }
+  .hero.cinema .hero-geez { font-size: 0.95rem; margin-bottom: 10px; }
+  .hero.cinema .ho-line { font-size: clamp(1.6rem, 6.8vw, 2.4rem); max-width: 14ch; }
+  .hero.cinema .hero-cta { margin-top: 18px; gap: 9px; }
+  .hero.cinema .hero-cta .btn { padding: 12px 19px; font-size: 0.72rem; letter-spacing: 0.12em; }
+}
+
+/* ---- phones, still mode (reduced motion): fewer elements, more air ----
    Everything here is a subtraction. A 390px screen cannot hold a kicker,
    a headline, a paragraph of prose, a Ge'ez line, two buttons and a ticker
    without all of it looking cramped — so the prose goes (it opens the very
@@ -730,6 +754,17 @@
 .rail-card p:lang(ti), .rail-card p:lang(am) { line-height: 1.85; }
 .rail-today .rc-year { color: var(--earth-text); }
 .rail-today .btn { margin-top: 20px; }
+/* phones: the chronicle becomes a filmstrip — one year filling the view
+   at a time, the giant odometer year still burning behind it */
+@media (max-width: 620px) {
+  .rail-track { gap: clamp(30px, 9vw, 48px); padding: 0 max(7vw, 24px); }
+  .rail-card { flex: 0 0 min(76vw, 330px); }
+  .rail-card:nth-child(odd) { transform: translateY(-4%); }
+  .rail-card:nth-child(even) { transform: translateY(5%); }
+  .rc-year { font-size: 1.7rem; margin-bottom: 10px; }
+  .rail-card p { font-size: 0.84rem; -webkit-line-clamp: 6; }
+  .rail-year { font-size: clamp(9rem, 44vw, 14rem); -webkit-text-stroke-width: 1px; }
+}
 
 /* ============ stories index — a ledger of names ============ */
 .ix-list { border-top: 1px solid var(--line); }

@@ -8,24 +8,28 @@ import { usePrefs } from '../hooks/usePrefs'
 import type { Locale } from '../content'
 
 gsap.registerPlugin(ScrollTrigger)
+/* phone address bars collapse mid-scroll; without this the pin re-measures
+   itself on that resize and the scene visibly jumps */
+ScrollTrigger.config({ ignoreMobileResize: true })
 
 /* ============================================================
-   Hero — a cinematic opening scene, in three cuts.
+   Hero — one cinematic scene, at every width.
 
-   cinema (desktop): curtain lifts, the headline sets itself line
-     by line over a framed photograph, then the frame swallows the
-     viewport on scroll — the land takes over — and releases.
+   cinema: the curtain lifts, the headline sets itself line by line,
+     and a framed window of film opens beneath it. On scroll the
+     frame swallows the viewport — the land takes over — then
+     releases into the page. The frame's geometry is measured per
+     viewport, so a phone gets the same choreography with margins
+     that suit it rather than a desktop scene squeezed sideways.
 
-   mobile: the film runs full-bleed from the first frame. Same
-     curtain, same line-by-line setting, a slow drift across the
-     footage, and a scrolled departure rather than a pinned scene —
-     pinning fights the address bar on phones and loses.
+   still: reduced motion only. Poster frame, no choreography,
+     everything legible immediately.
 
-   still: reduced motion or a metered connection. Poster frame,
-     no choreography, everything legible immediately.
+   Deliberately NOT branched on width: sampling innerWidth once at
+   mount meant a resize left the scene stranded in the wrong mode.
    ============================================================ */
 
-type Mode = 'cinema' | 'mobile' | 'still'
+type Mode = 'cinema' | 'still'
 
 export default function Hero({ lng, base }: { lng: Locale; base: string }) {
   const { t } = useTranslation()
@@ -33,8 +37,7 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
   const prefs = usePrefs()
   const [mode] = useState<Mode>(() => {
     if (typeof window === 'undefined') return 'still'
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 'still'
-    return window.innerWidth >= 880 ? 'cinema' : 'mobile'
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'still' : 'cinema'
   })
   /* the footage is the atmosphere — but not at the cost of someone's data plan */
   const film = mode !== 'still' && !prefs.saveData
@@ -44,39 +47,16 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
     if (!el || mode === 'still') return
 
     const ctx = gsap.context(() => {
-      if (mode === 'mobile') {
-        /* ---------- phones: full-bleed film, scrolled departure ---------- */
-        const intro = gsap.timeline({ defaults: { ease: 'expo.inOut' } })
-        intro
-          .to('.hc-2', { yPercent: -100, duration: 0.78, delay: 0.05 })
-          .to('.hc-1', { yPercent: -100, duration: 0.84 }, '-=0.6')
-          .from('.hh-kicker', { y: 18, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.48')
-          .from('.hh-line', { yPercent: 118, duration: 0.88, ease: 'power4.out', stagger: 0.1 }, '-=0.46')
-          .from('.hero-meta', { y: 16, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.58')
-          .from('.hero-geez', { y: 14, opacity: 0, duration: 0.55, ease: 'power3.out' }, '-=0.42')
-          .from('.hero-cta', { y: 16, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
-          .from('.hero-ticker', { yPercent: 100, duration: 0.7, ease: 'power3.out' }, '-=0.42')
-
-        /* a slow push across the footage so the frame is never quite still */
-        gsap.fromTo('.hero-media', { scale: 1.18 }, { scale: 1.03, duration: 10, ease: 'none' })
-
-        /* departure on scroll — no pin: mobile chrome resizes mid-scroll and
-           a pinned 100svh scene tears itself apart when it does */
-        gsap.timeline({
-          scrollTrigger: { trigger: el, start: 'top top', end: 'bottom top', scrub: 0.5 },
-        })
-          .to('.hero-head', { yPercent: -30, opacity: 0, ease: 'none' }, 0)
-          .to('.hero-over', { yPercent: -16, opacity: 0, ease: 'none' }, 0)
-          .to('.hero-photo .hero-media', { scale: 1.16, ease: 'none' }, 0)
-        return
-      }
-
-      /* ---------- desktop: the framed window that swallows the viewport ---------- */
+      /* ---------- the framed window that swallows the viewport ----------
+         Geometry is measured, not assumed: the window opens below the real
+         headline, and the side margins tighten on phones so the film reads
+         as a window rather than a sliver. */
       const frameClip = () => {
         const head = el.querySelector<HTMLElement>('.hero-head')
         const h = el.offsetHeight || window.innerHeight
         const top = head ? Math.min(head.getBoundingClientRect().height + 18, h * 0.62) : h * 0.45
-        return `inset(${Math.round(top)}px 15% 8% 15% round 10px)`
+        const side = window.innerWidth < 700 ? 6 : 15
+        return `inset(${Math.round(top)}px ${side}% 8% ${side}% round 10px)`
       }
       gsap.set('.hero-photo', { clipPath: frameClip() })
 
@@ -124,7 +104,7 @@ export default function Hero({ lng, base }: { lng: Locale; base: string }) {
     'WFP · UNICEF · FAO · EU · Oxfam',
   ]
 
-  const shell = mode === 'cinema' ? 'cinema' : mode === 'mobile' ? 'static mobile' : 'static'
+  const shell = mode === 'cinema' ? 'cinema' : 'static'
 
   return (
     <section className={`hero ${shell}`} data-elev="3900" ref={root}>
