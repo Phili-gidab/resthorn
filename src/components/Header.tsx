@@ -32,15 +32,9 @@ export default function Header() {
 
   useEffect(() => setOpen(false), [location.pathname])
 
-  /* The home hero opens on a white ground (cinema mode) at every width, so
-     light-on-photo nav only applies where the hero really is a full-bleed
-     photo: the reduced-motion still. Width is deliberately not consulted —
-     it made the brand white-on-white on phones. */
-  const isHome = /^\/(ti|am)?\/?$/.test(location.pathname)
-  const heroIsStatic =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const onPhoto = isHome && heroIsStatic
+  /* The home hero is a full-bleed film at every width now — the nav opens
+     light-on-photo there and nowhere else. */
+  const onPhoto = /^\/(ti|am)?\/?$/.test(location.pathname)
 
   const switchTo = (code: Locale) => {
     i18n.changeLanguage(code)
