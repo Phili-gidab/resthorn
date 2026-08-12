@@ -286,7 +286,9 @@ export default function ProjectMap({ pins, zoom, height = 420 }: { pins: MapPin[
 
   return (
     <div className="proj-map">
-      <div className="pm-frame" ref={frame} style={{ height }}>
+      {/* height rides a custom property so media queries can shrink it —
+          an inline height would outrank every stylesheet */}
+      <div className="pm-frame" ref={frame} style={{ '--pm-h': `${height}px` } as React.CSSProperties}>
         <div className="pm-canvas" ref={host} aria-label="Interactive 3D terrain map of project locations" role="application" />
 
         {/* leader line from card to stake */}
