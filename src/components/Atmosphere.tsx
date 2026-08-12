@@ -4,9 +4,10 @@ import gsap from 'gsap'
 
 /* ============================================================
    Atmosphere — the descent, felt.
-   The page ground itself loses altitude with you: cool thin-air
-   white near 3,900 m, warming through parchment on the mid-slopes,
-   settling into sun-baked earth tones just above the dark valley.
+   The page ground itself loses altitude with you: near-pure white
+   in the thin air at 3,900 m, gathering green through the terraced
+   mid-slopes, settling into full valley green just above the dark
+   close. White and green only — the descent is a saturation.
    Reads the same [data-elev] survey marks the altimeter reads and
    interpolates the ground tokens continuously between stops.
    Skipped for reduced-motion users — their palette stays still.
@@ -16,12 +17,12 @@ const VARS = ['--bg', '--surface', '--tint', '--line', '--line-soft'] as const
 
 /* colors listed in VARS order */
 const STOPS: { elev: number; c: string[] }[] = [
-  { elev: 3900, c: ['#fcfcfb', '#ffffff', '#f2f1ec', '#e2e0d8', '#eceae4'] },
-  { elev: 3200, c: ['#fdfcfa', '#ffffff', '#f4f1e9', '#e3dfd4', '#edeae1'] },
-  { elev: 2500, c: ['#fbf8ef', '#fffefa', '#f4eee0', '#e2dbc8', '#ece5d5'] },
-  { elev: 1800, c: ['#f9f4e6', '#fefbf2', '#f1e9d5', '#dfd5bd', '#e9e1cc'] },
-  { elev: 1200, c: ['#f6efdc', '#fcf7ea', '#eee4ca', '#d9ccad', '#e3d8bc'] },
-  { elev: 600, c: ['#f2e9d2', '#f9f2e1', '#e9ddbf', '#d1c2a0', '#ddd1b2'] },
+  { elev: 3900, c: ['#fcfdfa', '#ffffff', '#f2f6ea', '#e2e9d4', '#ecf1e0'] },
+  { elev: 3200, c: ['#fbfdf7', '#ffffff', '#f1f5e6', '#dfe6d0', '#e9efdc'] },
+  { elev: 2500, c: ['#f8fbf0', '#fdfef9', '#edf3dc', '#d9e2c2', '#e5ecd0'] },
+  { elev: 1800, c: ['#f4f9e8', '#fbfdf2', '#e7efd0', '#d1dcb4', '#dfe8c6'] },
+  { elev: 1200, c: ['#f0f6dd', '#f8fbea', '#e0eac2', '#c8d5a6', '#d8e3b8'] },
+  { elev: 600, c: ['#eaf2d0', '#f3f8e0', '#d8e4b4', '#bfce97', '#cfdda9'] },
 ]
 
 function palette(elev: number): string[] {

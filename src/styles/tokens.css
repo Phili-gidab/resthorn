@@ -1,6 +1,7 @@
 /* ============================================================
    REST · design tokens — light editorial
-   White ground, warm ink, REST's own green as the single accent.
+   Two colors only: white and REST's green, in all their variants —
+   green-tinted whites for ground, green-blacks for ink.
    Photography carries the atmosphere; the chrome stays quiet.
    ============================================================ */
 
@@ -39,27 +40,28 @@
 }
 
 :root {
-  /* ground */
-  --bg: #fdfcfa;
+  /* ground — whites with the faintest green cast; no warm beige anywhere */
+  --bg: #fbfdf7;
   --surface: #ffffff;
-  --tint: #f4f1e9;
-  --line: #e3dfd4;
-  --line-soft: #edeae1;
+  --tint: #f1f5e6;
+  --line: #dfe6d0;
+  --line-soft: #e9efdc;
 
-  /* voice */
-  --ink: #1b1a16;
-  --ink-soft: #56534a;
-  --ink-dim: #8a867b;
+  /* voice — green-blacks, not brown-blacks */
+  --ink: #171f0e;
+  --ink-soft: #4d5a3e;
+  --ink-dim: #7f8d6c;
 
   /* accents — REST's actual brand green, kept and honored */
   --green: #53900f;
   --green-deep: #3d6b0b;
   --accent: #53900f;
-  --river: #4e7e93;
+  /* water runs green here — from the land, to life */
+  --river: #6da341;
 
-  /* dark counter-band (footer CTA) */
-  --earth: #191813;
-  --earth-text: #f2efe8;
+  /* dark counter-band (footer CTA) — deep forest, not brown */
+  --earth: #131a0b;
+  --earth-text: #eef3e2;
 
   /* type */
   --serif: 'Fraunces', Georgia, serif;

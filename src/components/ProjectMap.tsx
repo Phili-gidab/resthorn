@@ -130,17 +130,17 @@ export default function ProjectMap({ pins, zoom, height = 420 }: { pins: MapPin[
               source: 'demShade',
               paint: {
                 'hillshade-exaggeration': 0.32,
-                'hillshade-shadow-color': '#1b1a16',
-                'hillshade-highlight-color': '#fff6e2',
+                'hillshade-shadow-color': '#141a0c',
+                'hillshade-highlight-color': '#f4f8e6',
                 'hillshade-accent-color': '#53900f',
               },
             },
           ],
-          /* dusty highland air, so the horizon reads as distance */
+          /* highland haze in the site's own palette — pale green-whites */
           sky: {
-            'sky-color': '#9dc0d8',
-            'horizon-color': '#e8dcc2',
-            'fog-color': '#d9cfb8',
+            'sky-color': '#cfdfc6',
+            'horizon-color': '#eaf1dc',
+            'fog-color': '#dce6ca',
             'fog-ground-blend': 0.62,
             'horizon-fog-blend': 0.42,
             'sky-horizon-blend': 0.7,

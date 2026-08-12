@@ -119,7 +119,7 @@ export function ContourStrip({ seed }: { seed: number }) {
       if (!ctx) return
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
       const rnd = mulberry(1000 + seed * 77)
-      const cols = ['rgba(27,26,22,.10)', 'rgba(83,144,15,.14)', 'rgba(27,26,22,.06)']
+      const cols = ['rgba(20,26,14,.10)', 'rgba(83,144,15,.14)', 'rgba(20,26,14,.06)']
       for (let i = 0; i < 3; i++) {
         ctx.strokeStyle = cols[i]
         ctx.lineWidth = 1
