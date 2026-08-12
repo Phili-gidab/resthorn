@@ -269,22 +269,63 @@
 }
 .rm-btn:hover { color: var(--ink); }
 
-/* ============ partner wall — proper names, no dead space ============ */
-.pwall-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(228px, 1fr)); gap: clamp(10px, 1.4vw, 16px); }
-.pw-card {
-  border: 1px solid var(--line); border-radius: 6px; background: var(--surface);
-  padding: clamp(18px, 2.2vw, 26px); display: grid; gap: 6px; align-content: start;
-  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+/* ============ partner stream — the confluence, moving ============ */
+.pstream { position: relative; }
+.ps-band {
+  overflow: hidden;
+  /* the river continues beyond the frame — edges dissolve, whatever the
+     atmosphere color underneath happens to be */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  padding: 6px 0 14px;
 }
-.pw-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(20, 26, 14, 0.07); }
-.pw-name { font-family: var(--serif); font-weight: 600; font-size: 1.08rem; color: var(--ink); line-height: 1.25; }
-.pw-role { font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); line-height: 1.5; }
-.pw-rest { margin-top: clamp(22px, 3vw, 34px); display: grid; gap: 12px; }
-.pw-rest-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-dim); }
-.pw-chips { display: flex; flex-wrap: wrap; gap: 7px; }
-.pw-chip {
-  border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
-  border-radius: 999px; padding: 5px 13px; font-size: 0.72rem; letter-spacing: 0.04em;
+.ps-track { display: flex; width: max-content; animation: ps-drift 58s linear infinite; }
+.ps-band:hover .ps-track, .ps-band:focus-within .ps-track { animation-play-state: paused; }
+.ps-band-rev .ps-track { animation-direction: reverse; animation-duration: 44s; }
+@keyframes ps-drift { to { transform: translateX(-33.333%); } }
+.ps-row { display: flex; align-items: stretch; gap: clamp(12px, 1.6vw, 20px); padding-right: clamp(12px, 1.6vw, 20px); }
+.ps-card {
+  width: clamp(232px, 24vw, 300px); min-height: 148px; flex: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: clamp(18px, 2vw, 24px);
+  display: flex; flex-direction: column; gap: 8px;
+  position: relative; overflow: hidden;
+  transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+}
+.ps-card::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(to bottom, var(--green), #b9d183);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform 0.4s var(--ease-out);
+}
+.ps-card:hover { border-color: var(--green); box-shadow: 0 14px 32px rgba(20, 26, 14, 0.09); transform: translateY(-3px); }
+.ps-card:hover::before { transform: scaleY(1); }
+.ps-top { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.ps-idx { font-family: var(--serif); font-style: italic; font-weight: 340; color: var(--green); font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.ps-tick { flex: 0 0 26px; height: 1px; background: var(--green); opacity: 0.5; }
+.ps-name { font-family: var(--serif); font-weight: 600; font-size: 1.16rem; color: var(--ink); line-height: 1.22; }
+.ps-role { margin-top: auto; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim); line-height: 1.55; }
+
+/* the long tail — a counter-current of names */
+.ps-tail { margin-top: clamp(18px, 2.6vw, 30px); }
+.ps-tail-label {
+  display: block; text-align: center; margin-bottom: clamp(14px, 2vw, 20px);
+  font-size: 0.64rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--ink-dim);
+}
+.ps-row-chips { align-items: center; gap: 10px; padding-right: 10px; }
+.ps-chip {
+  flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
+  border-radius: 999px; padding: 8px 18px; font-size: 0.76rem; letter-spacing: 0.04em; white-space: nowrap;
+  transition: color 0.3s, border-color 0.3s;
+}
+.ps-chip:hover { color: var(--green-deep); border-color: var(--green); }
+
+/* reduced motion: still streams, scrolled by hand; clones step aside */
+@media (prefers-reduced-motion: reduce) {
+  .ps-track { animation: none; width: auto; overflow-x: auto; }
+  .ps-band { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .ps-row[aria-hidden='true'] { display: none; }
+  .ps-row { padding: 0 var(--pad-x); }
 }
 
 /* ============ close band v2 ============ */
